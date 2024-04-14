@@ -1,0 +1,15 @@
+{
+  "routes": [
+    "/atm",
+    "/contact",
+    "/help",
+    "/home",
+    "/hospital",
+    "/industries",
+    "/institute",
+    "/office",
+    "/petrol",
+    "/products",
+    "/solutions"
+  ]
+}
