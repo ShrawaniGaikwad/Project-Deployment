@@ -1,0 +1,260 @@
+<nav class="navigation-bar">
+  <div class="container">   
+    <img  class="responsive-img" src="/assets/Screenshot 2024-03-02 132840.png" >
+    <nav  class="navbar navbar-custom" [ngClass]="{'expanded': menuOpen}">
+      <ul class="nav-list" [ngClass]="{'open': menuOpen}" style="color: rgb(255, 255, 255); ">
+          <li><u><h5 class="item" id="item" routerLink="/home" >Home</h5></u></li>
+          <li><u><h5 class="item" id="item" routerLink="/products">Products</h5></u></li>
+          <li><u><h5 class="item" id="item" routerLink="/contact">Contact</h5></u></li>
+          <li><u><h5 class="item" id="item" routerLink="/help">Help</h5> </u></li>
+          <li><u><h5 class="item" id="item" routerLink="/solutions">Solutions</h5></u></li>
+      </ul>
+        <a  href="javascript:void(0);" class="icon" (click)="toggleMenu()">
+        &#9776;
+      </a>
+  </nav>
+  </div> 
+</nav> 
+
+<div class="parallax2">
+  <h1 style="color: white;">SOLUTIONS</h1>
+  <div style="text-align: center;">
+  <p class="text" >VP Tronics is a major player in the Power Electronics industry in India serving a wide range of customers including Banks & Financial services, Government, Manufacturing, Retail and Corporate Customers.</p>
+    </div>
+  <div class="container5">
+  <div class="card4 scroll-animation" style="background-image:linear-gradient( rgba(0, 0, 0, 0.12), rgba(1, 1, 0, 1.3)), url(/assets/pump.png);">
+    <div style="color: white;">
+      <p style="font-size: 40px; font-weight: lighter;">Petrol Pumps</p>
+      <p style="font-size: 16px; font-weight: lighter;"> Petrol pumps require continuous power to operate fuel dispensers, payment terminals, and safety systems. Power outages can lead to significant operational disruptions and financial losses. Our UPS ensures uninterrupted power supply, enabling petrol pumps to provide reliable service and maintain safety protocols.    </p>
+    <div class="popup">
+      <span class="popuptext" id="myPopup">
+        <button class="close-btn" (click)="closePopup($event)">×</button>
+        <p style="font-size: 20px; font-weight: lighter;">Products Recommended</p>
+        <div class="flexing">
+        <div>
+          <img src="/assets/Product1.png" alt="Product 1" style="width:100px;height:100px;"><br>
+          Product Name 1<br>
+        </div>
+        <div>
+          <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+          Product Name 2<br>
+        </div>
+        <div>
+          <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+          Product Name 2
+        </div>
+        <div>
+          <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+          Product Name 2
+        </div>
+        <div>
+          <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+        Product Name 2
+      </div>
+    </div>
+      </span>
+    </div>
+    </div>
+  </div>
+    <div class="card4 scroll-animation" style="background-image:linear-gradient( rgba(0, 0, 0, 0.42), rgba(1, 1, 0, 1.3)), url(/assets/industry.png);">
+      <div style="color: white;">
+        <p style="font-size: 40px; font-weight: lighter;">Manufactoring</p>
+       <p style="font-size: 17px; font-weight: lighter;"> Manufacturing uses very sophisticated CNC Machines and precision tools to make parts and assemblies. Power outage leads to loss of job, expensive tools and time. Our UPS provides uninterrupted clean power helping industries deliver as per schedule. Precision and quality.
+      </p>
+      <div class="popup">
+        <span class="popuptext" id="myPopup">
+          <button class="close-btn" (click)="closePopup($event)">×</button>
+          <p style="font-size: 20px; font-weight: lighter;">Products Recommended</p>
+          <div class="flexing">
+          <div>
+            <img src="/assets/Product1.png" alt="Product 1" style="width:100px;height:100px;"><br>
+            Product Name 1<br>
+          </div>
+          <div>
+            <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2<br>
+          </div>
+          <div>
+            <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2
+          </div>
+          <div>
+            <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2
+          </div>
+          <div>
+            <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+          Product Name 2
+        </div>
+      </div>
+        </span>
+      </div>
+      </div>
+  </div>
+    <div class="card4 scroll-animation" style="background-image:linear-gradient( rgba(0, 0, 0, 0.42), rgba(1, 1, 0, 1.3)), url(/assets/office.png);">
+      <div style="color: white;">
+        <p style="font-size: 40px; font-weight: lighter;">Offices</p>
+        <p style="font-size: 17px; font-weight: lighter;"> Offices rely heavily on a constant power supply to keep computers, servers, and communication systems running smoothly. Power interruptions can cause data loss, reduced productivity, and missed deadlines. Our UPS provides stable and clean power, safeguarding office equipment and ensuring business continuity.      </p>
+      <div class="popup">
+        <span class="popuptext" id="myPopup">
+          <button class="close-btn" (click)="closePopup($event)">×</button>
+          <p style="font-size: 20px; font-weight: lighter;">Products Recommended</p>
+          <div class="flexing">
+          <div>
+            <img src="/assets/Product1.png" alt="Product 1" style="width:100px;height:100px;"><br>
+            Product Name 1<br>
+          </div>
+          <div>
+            <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2<br>
+          </div>
+          <div>
+            <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2
+          </div>
+          <div>
+            <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2
+          </div>
+          <div>
+            <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+          Product Name 2
+        </div>
+      </div>
+        </span>
+      </div>
+      </div>
+  </div>
+    <div class="card4 scroll-animation" style="background-image:linear-gradient( rgba(0, 0, 0, 0.42), rgba(1, 1, 0, 1.3)), url(/assets/medical.png);">
+      <div style="color: white;">
+        <p style="font-size: 40px; font-weight: lighter;">Medical</p>
+        <p style="font-size: 16px; font-weight: lighter;"> Medical facilities depend on a reliable power source to operate life-saving equipment, diagnostic machines, and essential lighting. Power failures can jeopardize patient care and safety. Our UPS delivers uninterrupted power, protecting critical medical devices and supporting healthcare professionals in delivering timely and accurate treatment.      </p>
+      <div class="popup">
+        <span class="popuptext" id="myPopup">
+          <button class="close-btn" (click)="closePopup($event)">×</button>
+          <p style="font-size: 20px; font-weight: lighter;">Products Recommended</p>
+          <div class="flexing">
+          <div>
+            <img src="/assets/Product1.png" alt="Product 1" style="width:100px;height:100px;"><br>
+            HF Series<br>
+          </div>
+          <div>
+            <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2<br>
+          </div>
+          <div>
+            <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2
+          </div>
+          <div>
+            <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2
+          </div>
+          <div>
+            <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+          Product Name 2
+        </div>
+      </div>
+        </span>
+      </div>  
+    </div>
+  </div>
+    <div class="card4 scroll-animation" style="background-image:linear-gradient( rgba(0, 0, 0, 0.42), rgba(1, 1, 0, 1.3)), url(/assets/education.png); ">
+      <div style="color: white;">
+        <p style="font-size: 40px; font-weight: lighter;">Education</p>
+        <p style="font-size: 16px; font-weight: lighter;"> Educational institutions require a dependable power supply for classrooms, labs, and administrative functions. Power outages can disrupt teaching, learning activities, and administrative processes. Our UPS provides consistent power, ensuring that educational activities proceed without interruption and maintaining a conducive learning environment.      </p>
+      <div class="popup">
+        <span class="popuptext" id="myPopup">
+          <button class="close-btn" (click)="closePopup($event)">×</button>
+          <p style="font-size: 20px; font-weight: lighter;">Products Recommended</p>
+          <div class="flexing">
+          <div>
+            <img src="/assets/Product1.png" alt="Product 1" style="width:100px;height:100px;"><br>
+            Product Name 1<br>
+          </div>
+          <div>
+            <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2<br>
+          </div>
+          <div>
+            <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2
+          </div>
+          <div>
+            <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+            Product Name 2
+          </div>
+          <div>
+            <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+          Product Name 2
+        </div>
+      </div>
+        </span>
+      </div>  
+    </div>
+  </div>
+    <div class="card4 scroll-animation" style="background-image:linear-gradient( rgba(0, 0, 0, 0.42), rgba(1, 1, 0, 1.3)), url(/assets/medical.png); margin-bottom: 2%;">
+      <div style="color: white;">
+        <p style="font-size: 40px; font-weight: lighter;">Malls</p>
+        <p style="font-size: 16px; font-weight: lighter;"> Malls need a stable power supply to support lighting, HVAC systems, security systems, and retail operations. Power outages can lead to a loss of business, compromised security, and an uncomfortable environment for shoppers. Our UPS ensures continuous power, enhancing customer experience and ensuring smooth mall operations.
+        </p>
+      <div class="popup">
+        <span class="popuptext" id="myPopup">
+          <button class="close-btn" (click)="closePopup($event)">×</button>
+          <p style="font-size: 20px; font-weight: lighter;">Products Recommended</p>
+          <div class="flexing">
+          <div>
+          <img src="/assets/Product1.png" alt="Product 1" style="width:100px;height:100px;"><br>
+          Product Name 1<br>
+        </div>
+        <div>
+          <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+          Product Name 2<br>
+        </div>
+        <div>
+          <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+          Product Name 2
+        </div>
+        <div>
+          <img src="/assets/Product2.png" alt="Product 2" style="width:100px;height:100px;"><br>
+          Product Name 2
+        </div>
+        <div>
+          <img src="/assets/Product1.png" alt="Product 2" style="width:100px;height:100px;"><br>
+          Product Name 2
+        </div>
+      </div>
+        </span>
+      </div>  
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="card3">
+  <div class="container3">
+    <div style="display: flex; justify-content: center;gap: 30px; margin-top: 1%;">
+      <li style="list-style: none; margin-left: 10;"></li>  <a href=" https://wa.me/919028249904" target="_blank"><img src="/assets/whatsapp.png" style="width: 35px;mix-blend-mode: darken; "></a>
+      <br>
+      <li style="list-style: none;"><a href="http://www.instagram.com/santoshgaikwad987"><img src="/assets/instagram.png" style="width: 60px;mix-blend-mode: darken; margin-top: -17%;"></a></li>
+      <br>
+      <li style="list-style: none;"><a href="http://www.facebook.com/profile.php?id=100005470960934"><img src="/assets/facebook1.jpeg" style="width: 35px; mix-blend-mode: darken;"></a></li>
+    </div>
+
+    <div>
+      <ul style="color: black; list-style: none; display: flex; justify-content: center; gap: 20px; margin-top: 10px; flex-wrap: wrap;">
+        <li><a style="color: black; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large; text-decoration: none;" routerLink="/products">Products</a></li>
+        <br>
+        <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;text-decoration: none;" routerLink="/contact">Contact</a></li>
+        <br>
+        <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;text-decoration: none;" routerLink="/solutions">Solutions</a></li>
+        <br>
+        <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: large;text-decoration: none;" routerLink="/help">Help</a></li>
+      </ul>
+    </div>
+    <div style="color: #000000; font-weight: 1500px;">
+      &#64; Copyright 
+    </div>
+  </div>
+</div>
+

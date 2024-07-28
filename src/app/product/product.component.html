@@ -1,0 +1,2163 @@
+<div class="page-content" [ngClass]="{'hidden': showOnlyTable}">
+<nav class="navigation-bar">
+    <div class="container">   
+      <img  class="responsive-img" src="/assets/Screenshot 2024-03-02 132840.png" >
+      <nav  class="navbar navbar-custom" [ngClass]="{'expanded': menuOpen}">
+        <ul class="nav-list" [ngClass]="{'open': menuOpen}" style="color: rgb(255, 255, 255); ">
+            <li><u><h5 class="item" id="item" routerLink="/home" >Home</h5></u></li>
+            <li><u><h5 class="item" id="item" routerLink="/products">Products</h5></u></li>
+            <li><u><h5 class="item" id="item" routerLink="/contact">Contact</h5></u></li>
+            <li><u><h5 class="item" id="item" routerLink="/help">Help</h5> </u></li>
+            <li><u><h5 class="item" id="item" routerLink="/solutions">Solutions</h5></u></li>
+        </ul>
+          <a  href="javascript:void(0);" class="icon" (click)="toggleMenu()">
+          &#9776;
+        </a>
+    </nav>
+    </div> 
+  </nav> 
+  <div style="display: flex; justify-content: center;">
+  <div class="backgroundcard">
+<div class="column">
+<div class="card1 scroll-animation">
+    <h4 style="color:rgb(182, 182, 182); ">On-Line UPS : HF Series</h4>
+    <img class="myclass" src="/assets/Product1.png">
+   
+</div>
+<div class="card scroll-animation">
+    <h3>Features</h3>
+    <div style="display: flex;">
+    <ul>
+        <li><p>High frequency and double conversion online technology</p></li>
+        <li><p>Fully digitized microprocessor control</p></li>
+        <li><p>Wide input voltage range</p></li>
+        <li><p>Highly efficient up to 91%</p></li>
+        </ul>
+        <ul>
+        <li><p>High input power factor 0.99</p></li>
+        <li><p>LCD display</p></li>
+        <li><p>Cold start</p></li>
+        <li><p>IGBT both inverter & rectifier stage</p></li>
+    </ul>
+</div>
+    <h3>Specifications</h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>Capacity</td>
+                <td>1000/2000/3000VA</td>
+            </tr>
+            <tr>
+                <td>Mains Input</td>
+                <td>220 / 230/ 240VAC (Nominal Voltage)</td>
+            </tr>
+            <tr>
+                <td>Output Voltage</td>
+                <td>220 / 230 / 240 VAC± 1% /0.9Std</td>
+            </tr>
+            <tr>
+                <td>Battery DC Voltage</td>
+                <td>36Vdc / 96Vdc</td>
+            </tr>
+            <tr>
+                <td>Net Weight</td>
+                <td>Depends on Model Type</td>
+            </tr>
+           <br>
+        </tbody>
+    </table>
+    <button class=" btn btn-primary" (click)="toggleTable(1)">Read More</button>
+    <br>
+</div>
+</div>
+<div class="column">
+    <div class="card1 scroll-animation">
+        <h4 style="color:rgb(182, 182, 182); ">On-Line UPS : XP Series</h4>
+        <img class="myclass" src="/assets/Product2.png">
+       
+    </div>
+    <div class="card scroll-animation">
+        <h3>Features</h3>
+        <div style="display: flex;">
+        <ul>
+            <li><p>true Double conversion</p></li>
+            <li><p>Customized Power Factor</p></li>
+            <li><p>Wide input voltage(110V - 300V)</p></li>
+            <li><p>Converting Mode available</p></li>
+        </ul>
+        <ul>
+            <li><p>ECO mode for energy saving(Only available for 1-3KVA)</p></li>
+            <li><p>Generator Compatible</p></li>
+            <li><p>Smart SNMP works well with either USB or RS-232 together</p></li>
+            <li><p>Adjsutable charging current via LCD or software only</p></li>
+        </ul>
+    </div>
+        <h3>Specifications</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Capacity</td>
+                    <td>1000VA to 14KVA</td>
+                </tr>
+                <tr>
+                    <td>Mains Input</td>
+                    <td>110/115/120/127VAC or 208/220/230/240VAC (Nominal Volatge)</td>
+                </tr>
+                <tr>
+                    <td>Output Voltage</td>
+                    <td>110/115/120/127VAC or 208/220/230/240VAC</td>
+                </tr>
+                <tr>
+                    <td>Battery Charging Voltage</td>
+                    <td>27.4VDC ±1% to  273±1%VDC</td>
+                </tr>
+                <tr>
+                    <td>Net Weight</td>
+                    <td>Depends on Model</td>
+                </tr>
+               <br>
+            </tbody>
+        </table>
+        <button class=" btn btn-primary" (click)="toggleTable(2)">Read More</button>
+        <br>
+    </div>
+    </div>
+    <div class="column">
+        <div class="card1 scroll-animation">
+            <h4 style="color:rgb(182, 182, 182); ">On-Line UPS : 3HF3310 Series</h4>
+            <img class="myclass" src="/assets/Product3.png">
+           
+        </div>
+        <div class="card scroll-animation">
+            <h3>Features</h3>
+            <div style="display: flex;">
+                <ul>
+                    <li><p>High power density design</p></li>
+                    <li><p>N+X parallel redundancy, support maximum 4 units in parallel</p></li>
+                    <li><p>Online double conversion with DSP control</p></li>
+                    <li><p>Input current harmonic: &lt;3%</p></li>
+                    <li><p>Wide input voltage range: 208~478Vac</p></li>
+                    <li><p>Wide input frequency range 40~70Hz</p></li>
+                    <li><p>The output can meet 100% unbalanced load</p></li>   
+                    </ul>
+                    <ul>
+                    <li><p>Maximum charging current up to 20A (Settable)</p></li>
+                    <li><p>Dual input source (optional for standard unit)</p></li>
+                    <li><p>Colorful 2.4 inch TFT LCD display and 7 inch LCD display LCD are optional</p></li>
+                    <li><p>Generator compatible</p></li>
+                    <li><p>ECO mode operation for energy saving</p></li>
+                    <li><p>Intelligent fan speed regulation</p></li>
+                    <li><p>Self-testing when UPS startup</p></li>
+                    <li><p>50/60Hz frequency converter mode</p></li>
+                  </ul>
+        </div>
+    <h3>Specifications</h3>
+    <table>
+        <tbody>
+            <tr>
+                <td>Capacity</td>
+                <td>10-40KVA</td>
+            </tr>
+            <tr>
+                <td>Mains Input</td>
+                <td>380/400/415VAC (Nominal Voltage)</td>
+            </tr>
+            <tr>
+                <td>Output Voltage</td>
+                <td>380/400/415VAC(3Ph + N + PE)</td>
+            </tr>
+            <tr>
+                <td>Battery Voltage</td>
+                <td>±120VDC to ±180VDC</td>
+            </tr>
+            <tr>
+                <td>Net Weight</td>
+                <td>129/35  to 239/46kg</td>
+            </tr>
+                <br>   
+            </tbody>
+        </table>
+        <button class=" btn btn-primary" (click)="toggleTable(3)">Read More</button>
+        <br>
+    </div>
+    </div>
+    <div class="column">
+        <div class="card1 scroll-animation">
+            <h4 style="color:rgb(182, 182, 182); ">On-Line UPS : GP Series</h4>
+            <img class="myclass" src="/assets/Product4.png">
+            
+        </div>
+        <div class="card scroll-animation">
+            <h3>Features</h3>
+            <div style="display: flex;">
+                <ul>
+                    <li><p>Wide input frequency range, ensure all types of fuel generators connected work stable.</p></li>
+                    <li><p>Built-in isolation transformer, strong anti-interference ability, provides more comprehensive protection.</p></li>
+                    <li><p>Built-in static electronic bypass switch, when UPS fails, it can transfer to bypass mode and continue to provide power for load by AC.</p></li>                
+                    </ul>
+                    <ul>
+                        <li><p>Double Conversion on-line design, which make the output a pure sine wave source with tracking frequency, phase-lock and voltage regulation, low distortion and without power fluctuation interference, providing the load with more comprehensive protection.</p></li>
+                    <li><p>Wide input voltage range up to " 165~275VAC, avoid frequently switching to battery mode, which adapt to the areas with harsh environment.</p></li>
+                    <li><p>Advanced floating switching and charging technology maximums the activation of the battery, thus saves the charging time and extends the battery life.</p></li>
+                  </ul>
+        </div>
+            <h3>Specifications</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Capacity</td>
+                        <td>6/4.8 or 10/8 (KVA/KW)</td>
+                </tr>
+                <tr>
+                    <td>Mains Input</td>
+                    <td>220/230VAC (Nominal Voltage)</td>
+                </tr>
+                <tr>
+                    <td>Output Voltage</td>
+                    <td>220Vac ± 0.5% / 230Vac  ± 0.5%</td>
+                </tr>
+                <tr>
+                    <td>Battery Voltage</td>
+                    <td>192VDC</td>
+                </tr>
+                <tr>
+                    <td>Net Weight</td>
+                    <td>63 or 82kg</td>
+                </tr>
+                <br>
+            </tbody>
+        </table>
+        <button class=" btn btn-primary" (click)="toggleTable(4)">Read More</button>
+        <br>
+    </div>
+    </div>
+    <div class="column">
+        <div class="card1 scroll-animation">
+            <h4 style="color:rgb(182, 182, 182); ">On-Line UPS : Master Series</h4>
+            <img class="myclass" src="/assets/Product5.png">
+            
+        </div>
+        <div class="card scroll-animation">
+            <h3>Features</h3>
+            <div style="display: flex;">
+                <ul>
+                    <li><p>Wide input voltage range up to "304~456VAC, avoid frequently switching to battery mode, which adapt to the areas with harsh environment.</p></li>
+                    <li><p>Adapt intelligent battery management (ABM) technology, thus extending battery life and reducing battery maintenance times.</p></li>
+                    <li><p>Advanced floating switching and charging technology maximize the activation of the battery, thus saves the charging time and extends the battery life.</p></li>
+                    <li><p>The UPS can be start directly by battery group when no utility access in, which meets the emergent needs of user.</p></li>
+                </ul>
+                <ul>
+                    <li><p>Communication with computer can be realized by RS232 with corresponding monitoring software. The various parameters can be shown on the communication interface.</p></li>
+                    <li><p>External SNMP adapter. The UPS with remote network management capability can provide real-time data for communication and management through a variety of network management systems.</p></li>
+                    <li><p>Self-diagnosis function before start-up, avoid the risks that the failure may lead to.</p></li>
+                    <li><p>The multi-protection such as overload, short-circuit, over-temperature, battery under voltage, battery over-charge and so on greatly ensure the system stability and reliability.</p></li>
+                </ul>
+        </div>
+            <h3>Specifications</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Capacity</td>
+                        <td>10/8 to 30/24 (KVA/KW)</td>
+                    </tr>
+                    <tr>
+                        <td>Mains Input</td>
+                        <td>380Vac ( ± 20%) , (3Ph + N + PE)</td>
+                    </tr>
+                    <tr>
+                        <td>Output Voltage</td>
+                        <td>220Vac ± 0.5% / 230Vac ± 0.5%(On Battery Mode)</td>
+                    </tr>
+                    <tr>
+                <td>Battery Voltage</td>
+                <td>192VDC</td>
+            </tr>
+            <tr>
+                <td>Net Weight</td>
+                <td>120 to 255 (kg)</td>
+            </tr>
+            <br>
+        </tbody>
+    </table>
+    <button class=" btn btn-primary" (click)="toggleTable(5)">Read More</button>
+    <br>
+</div>
+</div>
+<div class="column">
+    <div class="card1 scroll-animation">
+        <h4 style="color:rgb(182, 182, 182); ">On-Line UPS : E Power -L Series</h4>
+        <img class="myclass" src="/assets/Product6.png">
+        
+    </div>
+    <div class="card scroll-animation">
+        <h3>Features</h3>
+        <div style="display: flex;">
+            <ul>
+                <li><p>UPS transfers among different working mode without output interruption, thereby powering the load uninterruptedly.</p></li>
+                <li><p>The range of AC input voltage is (380/400/415Vac) (-25%/+20%), minimizing transfer to battery mode, thereby greatly prolonging the battery life.</p></li>
+                <li><p>Wide input frequency ranging from 45Hz to 65Hz, ensures stability of UPS while generator connected.</p></li>
+            </ul>
+            <ul>
+                <li><p>Set the maximum output power of the generator when a smaller one than needed is employed to extend the battery duration time. In this case, the load is supplied by both the generator and battery.</p></li>
+                <li><p>N+X parallel redundant design, up to 6 units available, makes the configuration more flexible.</p></li>
+                <li><p>Double DSP control makes the whole system more stable and reliable.</p></li>
+                <li><p>Battery self-test: Battery is automatically tested at regular intervals.</p></li>
+                <li><p>Flexible battery configuration ranging from 360-384Vdc.</p></li>
+            </ul>
+    </div>
+        <h3>Specifications</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Capacity</td>
+                    <td>10KVA / 8KW to 160KVA/ 128KW</td>
+                </tr>
+                <tr>
+                    <td>Mains Input</td>
+                    <td>380/ 400 / 415VAc( ±25% /±20%),(3Ph + PE)</td>
+                </tr>
+                <tr>
+                    <td>Output Voltage</td>
+                    <td>380/ 400 / 415VAc (±1%),(3Ph + N + PE) </td>
+                </tr>
+                <tr>
+                    <td>Battery Voltage</td>
+                    <td>384 VDC ( 360 ~ 384Vdc)</td>
+                </tr>
+                <tr>
+                    <td>Net Weight</td>
+                    <td>145 to 740 kg</td>
+                </tr>
+                <br>
+            </tbody>
+        </table>
+        <button class=" btn btn-primary" (click)="toggleTable(6)">Read More</button>
+        <br>
+    </div>
+</div>
+<div class="column">
+    <div class="card1 scroll-animation">
+        <h4 style="color:rgb(182, 182, 182); ">On-Line UPS :E Power Series</h4>
+        <img class="myclass" src="/assets/Product7.png">
+        
+    </div>
+    <div class="card scroll-animation">
+        <h3>Features</h3>
+        <div style="display: flex;">
+            <ul>
+                <li><p>The range of AC input voltage is (380/400/415Vac) (-25%/+20%), minimizing transfer to battery mode, thereby greatly prolonging the battery life.</p></li>
+                <li><p>Self-diagnosis function will take place before start-up for system reliability.</p></li>
+                <li><p>An emergency power-off button with transparent cover is embedded in the LCD control panel for emergency power-off.</p></li>
+                <li><p>Communication with computer can be realized by RS232 with corresponding monitoring software.</p></li>
+                <li><p>SNMP adapter (optional): for remote monitor through network.</p></li>
+            </ul>
+            <ul>
+                <li><p>Full DSP control makes the whole system more stable and reliable.</p></li>
+                <li><p>The output power factor is 0.9, it greatly matches the load, reduces the harmonic pollution on the Grid and lowers the UPS running cost.</p></li>
+                <li><p>N+X parallel redundant design, up to 6 units available, makes the configuration more flexible.</p></li>
+                <li><p>Any unit in parallel system fails, the faulty one will automatically cut off the output, and the load will be powered by the remaining units.</p></li>
+                <li><p>Flexible battery configuration ranging from 360-480V or 480-600Vdc.</p></li>
+            </ul>
+        </div>
+            <h3>Specifications</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Capacity</td>
+                        <td>Depends on Model Type</td>
+                    </tr>
+                    <tr>
+                        <td>Mains Input</td>
+                        <td>380 / 400/ 415Vac (-25% / +20%), (3Ph + N + PE) (Nominal Voltage)</td>
+                    </tr>
+                    <tr>
+                        <td>Output Voltage</td>
+                        <td>380 / 400/ 415Vac (±1%) </td>
+                    </tr>
+                    <tr>
+                        <td>Battery Voltage</td>
+                        <td>384 VDC ( 360 ~ 384Vdc)</td>
+                    </tr>
+                    <tr>
+                        <td>Net Weight</td>
+                        <td>148 to 426 (kg) (Check More)</td>
+                    </tr>
+                    <br>
+                </tbody>
+            </table>
+            <button class=" btn btn-primary" (click)="toggleTable(7)">Read More</button>
+            <br>
+        </div>
+        </div>
+
+</div>
+</div>
+
+<div class="card3">
+    <div class="container3">
+      <div style="display: flex; justify-content: center;gap: 30px; margin-top: 1%;">
+        <li style="list-style: none; margin-left: 10;"></li>  <a href=" https://wa.me/919028249904" target="_blank"><img src="/assets/whatsapp.png" style="width: 35px;mix-blend-mode: darken; "></a>
+        <br>
+        <li style="list-style: none;"><a href="http://www.instagram.com/santoshgaikwad987"><img src="/assets/instagram.png" style="width: 60px;mix-blend-mode: darken; margin-top: -17%;"></a></li>
+        <br>
+        <li style="list-style: none;"><a href="http://www.facebook.com/profile.php?id=100005470960934"><img src="/assets/facebook1.jpeg" style="width: 35px; mix-blend-mode: darken;"></a></li>
+      </div>
+      <div>
+        <ul style="color: black; list-style: none; display: flex; justify-content: center; gap: 20px; margin-top: 10px; flex-wrap: wrap;">
+          <li><a style="color: black; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large; text-decoration: none;" routerLink="/products">Products</a></li>
+          <br>
+          <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;text-decoration: none;" routerLink="/contact">Contact</a></li>
+          <br>
+          <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;text-decoration: none;" routerLink="/solutions">Solutions</a></li>
+          <br>
+          <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: large;text-decoration: none;" routerLink="/help">Help</a></li>
+        </ul>
+      </div>
+      <div style="color: #000000; font-weight: 1500px;">
+        &#64; Copyright 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mytable">
+  <div id="table-container"  [ngClass]="{'hidden': !showTable1}">
+    <div  style="margin-left: 5%; margin-right: 2%;">
+    <h1>HF Series</h1>
+    <div>
+        <div class="features-container">
+            <div class="ccard">
+    <ul>
+        <h3>Features</h3>
+        <li><p>High frequency and double conversion online technology</p></li>
+        <li><p>Fully digitized microprocessor control</p></li>
+        <li><p>Wide input voltage range</p></li>
+        <li><p>Highly efficient up to 91%</p></li>
+        <li><p>High input power factor 0.99</p></li>
+        <li><p>LCD display</p></li>
+        <li><p>Cold start</p></li>
+        </ul>
+    </div>
+    <div class="ccard">
+        <ul>
+            <h3>Features</h3>
+        <li><p>IGBT both inverter & rectifier stage</p></li>
+        <li><p>Advanced battery charge in UPS OFF mode</p></li>
+        <li><p>EMI/RFI noise filter</p></li>
+        <li><p>Smart RS232 communication with monitoring software</p></li>
+        <li><p>Optional SNMP card slot</p></li>
+        <li><p>High reliability digital control</p></li>
+        <li><p>Full protection function</p></li>
+    </ul>
+</div>
+    </div>
+ <br>
+    <div>
+    <div class="applications-container">
+        <div class="ccard">
+    <ul>
+        <h1>Applications</h1>
+        <li><p>Server and other networking equipment</p></li>
+        <li><p>Digital printers</p></li>
+        <li><p>Medical equipment</p></li>
+        <li><p>Laboratory equipment</p></li>
+    </ul>
+</div>
+</div>
+</div>
+    <h1>Specifications</h1>
+    <div class="table-responsive">
+    <table>
+        <tr><th>MODEL</th><th>HF1101I3</th><th>HF1101B3</th><th>HF1102L8</th><th>HF1102B8</th><th>HF1103I8</th><th>HF1103B8</th></tr>
+        <tr><td>Capacity (VA)</td><td>1000</td><td>1000</td><td>2000</td><td>2000</td><td>3000</td><td>3000</td></tr>
+        <tr><td colspan="7"><strong>INPUT</strong></td></tr>
+        <tr><td>Nominal Voltage</td><td colspan="6">220 / 230 / 240VAC</td></tr>
+        <tr><td>Operating Voltage Range</td><td colspan="6">110-300 VAC (Based on load at 50%), 160-280VAC (based on load at 100%)</td></tr>
+        <tr><td>Operating Frequency Range</td><td colspan="6">46~54Hz±0.5Hz or 56~64Hz±0.5Hz (auto sensing)</td></tr>
+        <tr><td colspan="7"><strong>OUTPUT</strong></td></tr>
+        <tr><td>Output Voltage / Power Factor</td><td colspan="6">220 / 230 / 240VAC±1% / 0.9</td></tr>
+        <tr><td>Output Frequency</td><td colspan="6">Synchronized with the utility on AC mode; 50Hz/60Hz±0.2% on Battery mode</td></tr>
+        <tr><td>Harmonic Distortion (THDv)</td><td colspan="6"><2% (Linear load), <5% (Non Linear Load)</td></tr>
+        <tr><td>Crest Factor</td><td colspan="6">3:1 (max)</td></tr>
+        <tr><td>Efficiency</td><td colspan="6">>91%</td></tr>
+        <tr><td colspan="7"><strong>BATTERY</strong></td></tr>
+        <tr><td>DC Voltage</td><td>36Vdc</td><td>96Vdc</td><td>96Vdc</td><td>96Vdc</td><td>96Vdc</td><td>96Vdc</td></tr>
+        <tr><td>Battery Type & Number</td><td>12V / 7Ah×3</td><td>12V / 7Ah×8</td><td>12V / 7Ah×8</td><td>12V / 7Ah×8</td><td>12V / 7Ah×8</td><td>12V / 7Ah×8</td></tr>
+        <tr><td>Backup Time (50% load)</td><td>12 min</td><td>19 min</td><td>16 min</td><td>19 min</td><td>16 min</td><td>19 min</td></tr>
+        <tr><td>Backup Time (Full Load)</td><td>5 min</td><td>9 min</td><td>5 min</td><td>9 min</td><td>5 min</td><td>9 min</td></tr>
+        <tr><td>Charge Current (Standard unit)</td><td>1A</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Charge Current (Long run unit)</td><td>6A</td><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Typical recharge time</td><td colspan="6">8 hours (to 90% of full capacity)</td></tr>
+        <tr><td colspan="7"><strong>SYSTEM FEATURES</strong></td></tr>
+        <tr><td>LCD Indication</td><td colspan="6">1) Input voltage / frequency, battery voltage, output voltage / frequency, load watt% and percent, inverter temperature. 2) Operation mode status “Online”, “On battery”, “On bypass”</td></tr>
+        <tr><td>LED Indication</td><td colspan="6">1) Green LED for normal operation 2) Yellow LED for warning condition 3) Red LED for abnormal operation 4) Amber LED for normal battery mode</td></tr>
+        <tr><td>Overload Capability</td><td colspan="6">1) >110%, 30s turn to bypass mode 2) >150%, 30ms turn to bypass mode</td></tr>
+        <tr><td>Transfer Time</td><td colspan="6">Between AC Mode and Battery Mode: 0ms</td></tr>
+        <tr><td></td><td colspan="6">Between AC Mode and Bypass Mode: 4ms (typical value 2.5ms)</td></tr>
+        <tr><td>Communication Interface</td><td colspan="6">RS232; SNMP (Optional)</td></tr>
+        <tr><td colspan="7"><strong>ENVIRONMENTAL</strong></td></tr>
+        <tr><td>Operating Temperature</td><td colspan="6">0°C – 40°C</td></tr>
+        <tr><td>Storage Temperature</td><td colspan="6">-25°C – 55°C</td></tr>
+        <tr><td>Humidity Range</td><td colspan="6">0% – 95% (non-condensing)</td></tr>
+        <tr><td>Altitude</td><td colspan="6"><1500m</td></tr>
+        <tr><td>Nose Level</td><td colspan="6"><45dB</td></tr>
+        <tr><td colspan="7"><strong>PHYSICAL</strong></td></tr>
+        <tr><td>Dimension W × D × H (mm)</td><td>144 × 421 × 215</td><td>191 × 478 × 339</td><td>191 × 478 × 339</td><td></td><td></td><td></td></tr>
+        <tr><td>Packing W × D × H (mm)</td><td>258 × 534 × 334</td><td>322 × 650 × 432</td><td>322 × 650 × 432</td><td></td><td></td><td></td></tr>
+        <tr><td>Net / Shipping Weight (kg) (Standard unit)</td><td>14 / 16</td><td>34 / 36</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>Net / Shipping Weight (kg) (Long run unit)</td><td>7.5 / 9</td><td>15 / 17</td><td></td><td></td><td></td><td></td></tr>
+        <tr><td colspan="7"><strong>STANDARDS</strong></td></tr>
+        <tr><td>Safety</td><td colspan="6">IEC / EN62040-1; IEC / EN60950-1</td></tr>
+        <tr><td>EMC</td><td colspan="6">IEC / EN62040-2; IEC61000-4-2; IEC61000-4-3; IEC61000-4-4; IEC61000-4-5; IEC61000-4-6; IEC61000-4-8</td></tr>
+    </table>
+    <br>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mytable">
+    <div id="table-container"  [ngClass]="{'hidden': !showTable2}">
+      <div  style="margin-left: 5%; margin-right: 2%;">
+      <u><h1>XP Series</h1></u>
+      <div>
+        <div class="features-container">
+            <div class="ccard">
+                <ul>
+                    <h3>Features</h3>
+                    <li><p>True Double conversion</p></li>
+                    <li><p>Customized Power Factor</p></li>
+                    <li><p>Wide input voltage(110V - 300V)</p></li>
+                    <li><p>Converting Mode available</p></li>
+                </ul>
+    </div>
+    <div class="ccard">
+        <ul>
+            <h3>Features</h3>
+            <li><p>ECO mode for energy saving(Only available for 1-3KVA)</p></li>
+            <li><p>Generator Compatible</p></li>
+            <li><p>Smart SNMP works well with either USB or RS-232 together</p></li>
+            <li><p>Adjsutable charging current via LCD or software only</p></li>
+    </ul>
+</div>
+    </div>
+ <br>
+      <h1>Specifications</h1>
+      <div class="table-responsive">
+        <table border="1">
+            <tr>
+              <th>MODEL</th>
+              <th>XP Series 1K (1KVA)</th>
+              <th>XP Series 2K (3KVA)</th>
+              <th>XP Series 3K (5KVA)</th>
+              <th>XP Series 11K (11KVA)</th>
+              <th>XP Series 14K (14KVA)</th>
+            </tr>
+            <tr>
+              <td><strong>CAPACITY</strong></td>
+              <td>1000 VA</td>
+              <td>3000 VA</td>
+              <td>5000 VA</td>
+              <td>11000 VA</td>
+              <td>14000 VA</td>
+            </tr>
+            <tr>
+              <td><strong>INPUT</strong></td>
+              <td colspan="5"></td>
+            </tr>
+            <tr>
+              <td>Nominal Voltage</td>
+              <td>110/115/120/127VAC or 208/220/230/240VAC</td>
+              <td>110/115/120/127VAC or 208/220/230/240VAC</td>
+              <td>Single phase with ground</td>
+              <td>110-300VAC (Based on load at 50%), 176-300VAC (Based on load at 100%)</td>
+              <td>208/220/230/240VAC</td>
+            </tr>
+            <tr>
+              <td>Input Voltage Range</td>
+              <td>55-150VAC or 110-300VAC (Based on load at 50%), 88-140VAC or 176-280VAC (Based on load at 100%)</td>
+              <td>55-150VAC or 110-300VAC (Based on load at 50%), 88-140VAC or 176-280VAC (Based on load at 100%)</td>
+              <td>110-300VAC (Based on load at 50%), 176-300VAC (Based on load at 100%)</td>
+              <td>46-54Hz or 56-64Hz</td>
+              <td>46-54Hz or 56-64Hz</td>
+            </tr>
+            <tr>
+              <td>Frequency Range</td>
+              <td>40Hz - 70Hz</td>
+              <td>40Hz - 70Hz</td>
+              <td>40Hz - 70Hz</td>
+              <td>46-54Hz or 56-64Hz</td>
+              <td>46-54Hz or 56-64Hz</td>
+            </tr>
+            <tr>
+              <td>Power Factor</td>
+              <td>0.99 "&#64;" Nominal Voltage (100% load)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>OUTPUT</strong></td>
+              <td colspan="5"></td>
+            </tr>
+            <tr>
+              <td>Output Voltage</td>
+              <td>110/115/120/127VAC or 208/220/230/240VAC</td>
+              <td>110/115/120/127VAC or 208/220/230/240VAC</td>
+              <td>110/115/120/127VAC or 208/220/230/240VAC</td>
+              <td>208/220/230/240VAC</td>
+              <td>208/220/230/240VAC</td>
+            </tr>
+            <tr>
+              <td>Voltage Regulation</td>
+              <td>± 1%</td>
+              <td>± 1%</td>
+              <td>± 1%</td>
+              <td>± 1%</td>
+              <td>± 1%</td>
+            </tr>
+            <tr>
+              <td>Frequency Range (Synchronized Range)</td>
+              <td>47 ~ 53Hz or 57 ~ 63Hz</td>
+              <td>47 ~ 53Hz or 57 ~ 63Hz</td>
+              <td>47 ~ 53Hz or 57 ~ 63Hz</td>
+              <td>46-54Hz or 56-64Hz</td>
+              <td>46-54Hz or 56-64Hz</td>
+            </tr>
+            <tr>
+              <td>Frequency Range (Batt. Mode)</td>
+              <td>50 Hz ± 0.25 Hz or 60Hz ± 0.3 Hz</td>
+              <td>50 Hz ± 0.25 Hz or 60Hz ± 0.3 Hz</td>
+              <td>50 Hz ± 0.25 Hz or 60Hz ± 0.3 Hz</td>
+              <td>50 Hz or 60Hz ± 0.1 Hz</td>
+              <td>50 Hz or 60Hz ± 0.1 Hz</td>
+            </tr>
+            <tr>
+              <td>Current Crest Ratio</td>
+              <td>3:1</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Harmonic Distortion</td>
+              <td>≤ 3 % THD (Linear Load) ≤ 6 % THD (Non-linear Load)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Transfer Time</td>
+              <td>AC Mode to Battery Mode: Zero</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Inverter to Bypass</td>
+              <td>4 ms (Typical)</td>
+              <td>4 ms (Typical)</td>
+              <td>4 ms (Typical)</td>
+              <td>Zero</td>
+              <td>Zero</td>
+            </tr>
+            <tr>
+              <td>Waveform (Batt. Mode)</td>
+              <td>Pure Sinewave</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>EFFICIENCY</strong></td>
+              <td colspan="5"></td>
+            </tr>
+            <tr>
+              <td>AC Mode</td>
+              <td>88%</td>
+              <td>89%</td>
+              <td>90%</td>
+              <td>92%</td>
+              <td>93%</td>
+            </tr>
+            <tr>
+              <td>Battery Mode</td>
+              <td>83%</td>
+              <td>87%</td>
+              <td>88%</td>
+              <td>90%</td>
+              <td>91%</td>
+            </tr>
+            <tr>
+              <td><strong>BATTERY</strong></td>
+              <td colspan="5"></td>
+            </tr>
+            <tr>
+              <td>Battery Type</td>
+              <td>12 V / 9 Ah</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Numbers</td>
+              <td>3</td>
+              <td>6</td>
+              <td>8</td>
+              <td>16</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>Typical Recharge Time</td>
+              <td>4 hours recover to 90% capacity</td>
+              <td>4 hours recover to 90% capacity</td>
+              <td>4 hours recover to 90% capacity</td>
+              <td>9 hours recover to 90% capacity</td>
+              <td>9 hours recover to 90% capacity</td>
+            </tr>
+            <tr>
+              <td>Charging Current (max.)</td>
+              <td>1 A</td>
+              <td>1 A</td>
+              <td>1 A</td>
+              <td>1 A / 2 A</td>
+              <td>1 A / 2 A</td>
+            </tr>
+            <tr>
+              <td>Charging Voltage</td>
+              <td>27.4VDC ± 1%</td>
+              <td>54.7 VDC ± 1%</td>
+              <td>82.1 VDC ± 1%</td>
+              <td>218.4 VDC ± 1%</td>
+              <td>273 VDC ± 1%</td>
+            </tr>
+            <tr>
+              <td>Numbers (Long-run Model**)</td>
+              <td>2</td>
+              <td>3</td>
+              <td>6</td>
+              <td>16 - 20 (Adjustable)</td>
+              <td>16 - 20 (Adjustable)</td>
+            </tr>
+            <tr>
+              <td>Charging Current (max.) (Long-run Model**)</td>
+              <td>1A/2A/4A/6A (Adjustable)</td>
+              <td>1A/2A/4A/6A (Adjustable)</td>
+              <td>1A/2A/4A/6A (Adjustable)</td>
+              <td>1A/2A/4A/6A (Adjustable, 6A is only available for 16pcs batteries)</td>
+              <td>1A/2A/4A/6A (Adjustable, 6A is only available for 16pcs batteries)</td>
+            </tr>
+            <tr>
+              <td>Charging Voltage (Long-run Model**)</td>
+              <td>27.4VDC ± 1%</td>
+              <td>54.7 VDC ± 1%</td>
+              <td>82.1 VDC ± 1%</td>
+              <td>218.4 VDC ± 1%</td>
+              <td>273 VDC ± 1%</td>
+            </tr>
+            <tr>
+              <td><strong>INDICATORS</strong></td>
+              <td colspan="5">Load level, Battery level, AC mode, Battery mode, Bypass mode, and Fault indicators</td>
+            </tr>
+            <tr>
+              <td><strong>ALARM</strong></td>
+              <td colspan="5"></td>
+            </tr>
+            <tr>
+              <td>Battery Mode</td>
+              <td>Sounding every 4 seconds</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Low Battery</td>
+              <td>Sounding every second</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Overload</td>
+              <td>Sounding twice every second</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Fault</td>
+              <td>Continuously sounding</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>PHYSICAL</strong></td>
+              <td colspan="5"></td>
+            </tr>
+            <tr>
+              <td>Standard Model Net Weight (kgs)</td>
+              <td>9.8</td>
+              <td>20.2</td>
+              <td>28</td>
+              <td>81</td>
+              <td>84</td>
+            </tr>
+            <tr>
+              <td>Standard Model Dimension, D x W x H (mm)</td>
+              <td>282 x 145 x 220</td>
+              <td>397 x 145 x 220</td>
+              <td>442 x 190 x 318</td>
+              <td>442 x 190 x 688</td>
+              <td>442 x 190 x 688</td>
+            </tr>
+            <tr>
+              <td>Standard Model Net Weight (kgs)</td>
+              <td>4.1</td>
+              <td>6.8</td>
+              <td>7.4</td>
+              <td>16</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>Long-run Model Dimension, D x W x H (mm)</td>
+              <td>282 x 145 x 220</td>
+              <td>397 x 145 x 220</td>
+              <td>442 x 190 x 318</td>
+              <td>369 x 190 x 318</td>
+              <td>442 x 190 x 688</td>
+            </tr>
+            <tr>
+              <td><strong>ENVIRONMENT</strong></td>
+              <td colspan="5"></td>
+            </tr>
+            <tr>
+              <td>Humidity</td>
+              <td>20-90 % RH "&#64;" 0-40°C (Non-condensing)</td>
+              <td>20-90 % RH "&#64;" 0-40°C (Non-condensing)</td>
+              <td>20-90 % RH "&#64;" 0-40°C (Non-condensing)</td>
+              <td>0-95% RH "&#64;" 0-50°C (non-condensing)</td>
+              <td>0-95% RH "&#64;" 0-50°C (non-condensing)</td>
+            </tr>
+            <tr>
+              <td>Noise Level</td>
+              <td>Less than 50dB "&#64;" 1 Meter</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><strong>MANAGEMENT</strong></td>
+              <td colspan="5">Smart RS-232 / USB, Supports Windows® 2000/2003/XP/Vista/2008, Windows® 7/8/10, Linux and MAC, Optional SNMP</td>
+            </tr>
+          </table>
+          <br>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="mytable">
+    <div id="table-container"  [ngClass]="{'hidden': !showTable3}">
+      <div  style="margin-left: 5%; margin-right: 2%;">
+      <u><h1>3HF3310 Series</h1></u>
+      <div>
+        <div class="features-container">
+            <div class="ccard">
+    <ul>
+        <h3>Features</h3>
+        <li><p>High power density design</p></li>
+  <li><p>N+X parallel redundancy, support maximum 4 units in parallel</p></li>
+  <li><p>Online double conversion with DSP control</p></li>
+  <li><p>Input current harmonic: &lt;3%</p></li>
+  <li><p>Wide input voltage range: 208~478Vac</p></li>
+  <li><p>Wide input frequency range 40~70Hz</p></li>
+  <li><p>Optimization battery group, the quantity of battery 10~30kVA: 16/18/20pcs (30~50pcs is optional) 40kVA: 30~50pcs</p></li>
+  <li><p>Maximum charging current up to 20A (Settable)</p></li>
+  <li><p>Dual input source (optional for standard unit)</p></li>
+  <li><p>Colorful 2.4 inch TFT LCD display and 7 inch LCD display LCD are optional</p></li>
+        </ul>
+    </div>
+    <div class="ccard">
+        <ul>
+            <h3>Features</h3>
+            <li><p>Versatile LCD human-computer interface</p></li>
+            <li><p>Generator compatible</p></li>
+            <li><p>ECO mode operation for energy saving</p></li>
+            <li><p>Intelligent fan speed regulation</p></li>
+            <li><p>Self-testing when UPS startup</p></li>
+            <li><p>50/60Hz frequency converter mode</p></li>
+            <li><p>The output can meet 100% unbalanced load</p></li>
+            <li><p>Multiple protection function: short-circuit, overload, overheat, battery overcharge and overdischarge, output low voltage and fan fault alarm</p></li>
+            <li><p>Multiple communication interface: USB, RS232, RS485, Parallel port, Dry contact, Intelligent slot, SNMP card (Optional), Relay card (Optional), Battery temperature sensor (Optional)</p></li>
+    </ul>
+</div>
+    </div>
+ <br>
+      <h1>Specifications</h1>
+      <div class="table-responsive">
+        <table border="1">
+            <tr>
+              <th>MODEL</th>
+              <th>YDC3310S/H</th>
+              <th>YDC3315S/H</th>
+              <th>YDC3320S/H</th>
+              <th>YDC3330S/H</th>
+              <th>YDC3340S/H</th>
+            </tr>
+            <tr>
+              <td>Capacity</td>
+              <td>10kVA / 9kW</td>
+              <td>15kVA / 13.5kW</td>
+              <td>20kVA / 18kW</td>
+              <td>30kVA / 27kW</td>
+              <td>40kVA / 36kW</td>
+            </tr>
+            <tr>
+              <td colspan="6"><strong>INPUT</strong></td>
+            </tr>
+            <tr>
+              <td>Nominal voltage</td>
+              <td colspan="5">380/400/415Vac (3Ph+N+PE)</td>
+            </tr>
+            <tr>
+              <td>Operating voltage range</td>
+              <td colspan="5">305~478Vac (full load); 208~478Vac (50% load)</td>
+            </tr>
+            <tr>
+              <td>Operating frequency range</td>
+              <td colspan="5">40~70Hz (50/60Hz Auto-Sensing)</td>
+            </tr>
+            <tr>
+              <td>Power factor</td>
+              <td colspan="5">≥ 0.99</td>
+            </tr>
+            <tr>
+              <td>Bypass voltage range</td>
+              <td colspan="5">Max.voltage:220V +25% (Optional: +10%, +15%, +20%)<br>
+                230V +20% (Optional: +10%, +15%)<br>
+                240V +15% (Optional:+10%)<br>
+                Min.voltage: -45% (Optional: -20%, -30%)</td>
+            </tr>
+            <tr>
+              <td>Frequency protection range</td>
+              <td colspan="5">50/60Hz ± 10%</td>
+            </tr>
+            <tr>
+              <td>ECO range</td>
+              <td colspan="5">Same as bypass</td>
+            </tr>
+            <tr>
+              <td>Harmonic distortion (THDi)</td>
+              <td colspan="5">≤ 3% Linear load</td>
+            </tr>
+            <tr>
+              <td colspan="6"><strong>OUTPUT</strong></td>
+            </tr>
+            <tr>
+              <td>Output voltage</td>
+              <td colspan="5">380/400/415Vac (3Ph+N+PE)</td>
+            </tr>
+            <tr>
+              <td>Voltage regulation</td>
+              <td colspan="5">± 1%</td>
+            </tr>
+            <tr>
+              <td>Power factor</td>
+              <td colspan="5">0.9</td>
+            </tr>
+            <tr>
+              <td>Output voltage</td>
+              <td colspan="5">± 1% / ± 2% / ± 4% / ± 5% / ± 10% of the rated frequency (Optional)</td>
+            </tr>
+            <tr>
+              <td>Frequency</td>
+              <td colspan="5">Line Mode: 50Hz / 60Hz (± 0.1Hz)<br>
+                Battery Mode: 50Hz / 60Hz (± 0.1Hz)</td>
+            </tr>
+            <tr>
+              <td>Transfer time</td>
+              <td colspan="5">0ms</td>
+            </tr>
+            <tr>
+              <td>Output waveform</td>
+              <td colspan="5">Pure Sinewave</td>
+            </tr>
+            <tr>
+              <td>Crest factor</td>
+              <td colspan="5">3:1</td>
+            </tr>
+            <tr>
+              <td>Harmonic distortion (THDv)</td>
+              <td colspan="5">≤ 2% Linear load<br>
+                ≤ 5% Non linear load</td>
+            </tr>
+            <tr>
+              <td>Overload</td>
+              <td colspan="5">AC mode: ≤ 110%, last 60min; ≤ 125%, last 10min; ≤ 150%, last 1min; >150% turn to bypass Immediately<br>
+                Battery mode: ≤ 110%, last 10min; ≤ 125%, last 1min; ≤ 150%, last 5s; >150% turn to bypass Immediately</td>
+            </tr>
+            <tr>
+              <td colspan="6"><strong>EFFICIENCY</strong></td>
+            </tr>
+            <tr>
+              <td>Efficiency</td>
+              <td colspan="5">up to 93.5%<br>
+                up to 94.5%</td>
+            </tr>
+            <tr>
+              <td colspan="6"><strong>BATTERY</strong></td>
+            </tr>
+            <tr>
+              <td>Battery voltage</td>
+              <td colspan="2">± 120Vdc<br>
+                (20pcs 12V/9Ah);<br>
+                (20pcs 12V/7Ah, 20pcs 12V/9Ah optional)</td>
+              <td colspan="3">± 120Vdc<br>
+                (20pcs 12V/9Ah);<br>
+                (±20pcs 12V/7Ah optional)</td>
+            </tr>
+            <tr>
+              <td>Battery voltage</td>
+              <td colspan="2">± 120Vdc<br>
+                (3x20pcs 12V/9Ah)<br>
+                (3x20pcs 12V/7Ah optional)</td>
+              <td colspan="3">± 180Vdc<br>
+                (4x20pcs 12V/9Ah);<br>
+                (3x20pcs 12V/7Ah optional)</td>
+            </tr>
+            <tr>
+              <td>Long run unit</td>
+              <td colspan="2">10~30kVA: ± 96/108/120Vdc; battery quantity:16~20pcs, 16pcs default, Standard unit and 20pcs no power derating, 18pcs output power factor:0.9(0.8),19pcs output power factor:0.7(0.8),<br>
+                30~30kVA (Optional): ± 180/192/204/216/228/240/252/264/276/288/300Vdc (30/32/34/36/38/40/42/44/46/48/50pcs optional)</td>
+              <td colspan="3">40kVA: ± 180/192/204/216/228/240/252/264/276/288/300Vdc<br>
+                300/36/30/34/36/38/40/42/44/46/48/50pcs )</td>
+            </tr>
+            <tr>
+              <td>Charge Current (Standard unit)</td>
+              <td>1.35A<br>
+                (2.7A optional)</td>
+              <td>2.7A</td>
+              <td>4.05A</td>
+              <td>2.7A</td>
+              <td>2.7A</td>
+            </tr>
+            <tr>
+              <td>Charge Current (Long run unit)</td>
+              <td>14A Max.</td>
+              <td>16A Max.</td>
+              <td>18A Max.</td>
+              <td>20A Max.</td>
+              <td>20A Max.</td>
+            </tr>
+            <tr>
+              <td colspan="6"><strong>PHYSICAL</strong></td>
+            </tr>
+            <tr>
+              <td>Standard unit Dimension, W x D x H (mm)</td>
+              <td colspan="5">250 x 900 x 868</td>
+            </tr>
+            <tr>
+              <td>Long run unit Dimension, W x D x H (mm)</td>
+              <td colspan="5">250 x 850 x 655</td>
+            </tr>
+            <tr>
+              <td>Net weight (kg)</td>
+              <td>129/35</td>
+              <td>186/39</td>
+              <td>187/40</td>
+              <td>236/43</td>
+              <td>239/46</td>
+            </tr>
+            <tr>
+              <td colspan="6"><strong>ENVIRONMENTAL</strong></td>
+            </tr>
+            <tr>
+              <td>Operating temperature</td>
+              <td colspan="5">0 ~ 40°C</td>
+            </tr>
+            <tr>
+              <td>Storage temperature</td>
+              <td colspan="5">-25 ~ 55°C (no battery)</td>
+            </tr>
+            <tr>
+              <td>Humidity range</td>
+              <td colspan="5">0 ~ 95% (Non condensing)</td>
+            </tr>
+            <tr>
+              <td>Altitude</td>
+              <td colspan="5">＜1500m, derating required when＞1500m</td>
+            </tr>
+            <tr>
+              <td>Noise level</td>
+              <td>＜55dB</td>
+              <td>＜58dB</td>
+              <td>＜58dB</td>
+              <td>＜61dB</td>
+              <td>＜64dB</td>
+            </tr>
+            <tr>
+              <td colspan="6"><strong>STANDARDS</strong></td>
+            </tr>
+            <tr>
+              <td>Safety</td>
+              <td colspan="5">IEC/EN62040-1, IEC/EN62040-2, IEC/EN60950-1, CE, EN62040-4-5, EN62040-4-6, EN62040-4-8</td>
+            </tr>
+          </table>
+          <br>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="mytable">
+    <div id="table-container"  [ngClass]="{'hidden': !showTable4}">
+      <div  style="margin-left: 5%; margin-right: 2%;">
+      <u><h1>GP Series</h1></u>
+      <div>
+        <div class="features-container">
+            <div class="ccard">
+    <ul>
+        <h3>Features</h3>
+        <li><p>Double Conversion on-line design, which make the output a pure sine wave source with tracking frequency, phase-lock and voltage regulation, low distortion and without power fluctuation interference, providing the load with more comprehensive protection.</p></li>
+        <li><p>Built-in isolation transformer, strong anti-interference ability, provides more comprehensive protection.</p></li>
+        <li><p>Built-in static electronic bypass switch, when UPS fails, it can transfer to bypass mode and continue to provide power for load by AC.</p></li>
+        <li><p>Wide input voltage range up to " 165~275VAC, avoid frequently switching to battery mode, which adapt to the areas with harsh environment.</p></li>
+        <li><p>Wide input frequency range, ensure all types of fuel generators connected work stable.</p></li>
+        <li><p>Advanced floating switching and charging technology maximums the activation of the battery, thus saves the charging time and extends the battery life.</p></li>
+        </ul>
+    </div>
+    <div class="ccard">
+        <ul>
+            <h3>Features</h3>
+            <li><p>The UPS can be start directly by battery group when no utility access in, which meets the emergent needs of user.</p></li>
+            <li><p>Strong cold start ability, which can do the cold start operation when full load.</p></li>
+            <li><p>Communication with computer can be realized by RS232 with corresponding monitoring software. The various parameters can be shown on the communication interface.</p></li>
+            <li><p>External SNMP adapter. The UPS with remote network management capability can provide real-time data for communication and management through a variety of network management systems.</p></li>
+            <li><p>Self-diagnosis function before start-up, avoid the risks that the failure may lead to.</p></li>
+            <li><p>The multi-protection such as overload, short-circuit, over-temperature, battery under voltage, battery over-charge and so on greatly ensure the system stability and reliability.</p></li>
+    </ul>
+</div>
+    </div>
+ <br>
+      <h1>Specifications</h1>
+      <div class="table-responsive">
+        <table>
+            <tr><th>MODEL</th> <th >GP06</th>
+                <th >GP10</th></tr>
+            <tr>
+                <td>Capacity (KVA / KW)</td>
+                <td>6 / 4.8</td>
+                <td>10 / 8</td>
+            </tr>
+            <tr>
+                <td>Nominal voltage</td>
+                <td colspan="2">220/230Vac</td>
+            </tr>
+            <tr>
+                <td>Operating voltage range</td>
+                <td colspan="2">165 ~ 275Vac</td>
+            </tr>
+            <tr>
+                <td>Operating frequency range</td>
+                <td colspan="2">50/60Hz (±5%)</td>
+            </tr>
+            <tr>
+                <td>Power factor</td>
+                <td colspan="2">>0.97 (with filter)</td>
+            </tr>
+            <tr>
+                <td>Output voltage</td>
+                <td colspan="2">220Vac(±0.5%) / 230Vac(±0.5%)</td>
+            </tr>
+            <tr>
+                <td>Output frequency</td>
+                <td colspan="2">50/60Hz(±0.5%)</td>
+        </tr>
+        <tr>
+            <td>Crest factor</td>
+            <td colspan="2">3:1 (max)</td>
+        </tr>
+        <tr>
+            <td>Efficiency</td>
+            <td colspan="2">> 92% online</td>
+        </tr>
+        <tr>
+            <td>Harmonic distortion (THD)</td>
+            <td colspan="2"><1.5% (Linear Load)</td>
+        </tr>
+        <tr>
+            <td>Power Factor</td>
+            <td colspan="2">0.8 (0.9 Optional)</td>
+        </tr>
+        <tr>
+            <td>Battery Voltage</td>
+            <td colspan="2">192 VDC</td>
+        </tr>
+        <tr>
+            <td>Battery Types</td>
+            <td colspan="2">SMF VRLA / TUBULAR</td>
+        </tr>
+        <tr>
+            <td>Transfer Time</td>
+            <td colspan="2">0 ms (Line mode ↔ Battery mode)</td>
+        </tr>
+        <tr>
+            <td>Overload</td>
+            <td colspan="2">>125% : 1min,<150%: 200ms</td>
+        </tr>
+        <tr>
+            <td>Communication interface</td>
+            <td colspan="2">RS, SNMP (optional), Dry contact (optional)</td>
+        </tr>
+        <tr>
+            <td>Operating temperature</td>
+            <td colspan="2">0 ~ 40°C</td>
+        </tr>
+        <tr>
+            <td>Storage temperature</td>
+            <td colspan="2">-25°C ~ 55°C</td>
+        </tr>
+        <tr>
+            <td>Humidity range</td>
+            <td colspan="2">0 ~ 95% (non-condensing)</td>
+        </tr>
+        <tr>
+            <td>Altitude</td>
+            <td colspan="2"><1500m</td>
+        </tr>
+        <tr>
+            <td>Noise level</td>
+            <td colspan="2"><55dB</td>
+        </tr>
+        <tr>
+            <td>Dimension W x D x H (mm)</td>
+            <td>230 x 580 x 720</td>
+            <td>305 x 585 x 864</td>
+        </tr>
+        <tr>
+            <td>Net weight (kg)</td>
+            <td>63</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>Safety</td>
+            <td colspan="2">IEC/EN62040-1;ENC/EN62400-1</td>
+        </tr>
+        <tr>
+            <td>EMC</td>
+            <td colspan="2">IEC/EN62040-2;IEC61000-4-2;IEC61000-4-3;IEC61000-4-4;IEC61000-4-5;IEC61000-4-6;IEC61000-4-8</td>
+        </tr>
+    </table>
+    <br>
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="mytable">
+    <div id="table-container"  [ngClass]="{'hidden': !showTable5}">
+      <div  style="margin-left: 5%; margin-right: 2%;">
+      <u><h1>Master Series</h1></u>
+      <div>
+        <div class="features-container">
+            <div class="ccard">
+    <ul>
+        <h3>Features</h3>
+        <li><p>Double Conversion on-line design, which make the output a pure sine wave source with tracking frequency, phase-lock- and voltage regulation, low distortion and without power fluctuation interference, providing the load with more comprehensive protection.</p></li>
+    <li><p>Built-in isolation transformer, strong anti-interference ability, provides more comprehensive protection.</p></li>
+    <li><p>Wide input voltage range up to "304~456VAC, avoid frequently switching to battery mode, which adapt to the areas with harsh environment.</p></li>
+    <li><p>Wide input frequency range, ensure all types of fuel generators connected work stable.</p></li>
+    <li><p>Adapt intelligent battery management (ABM) technology, thus extending battery life and reducing battery maintenance times.</p></li>
+    <li><p>Advanced floating switching and charging technology maximize the activation of the battery, thus saves the charging time and extends the battery life.</p></li>
+    </ul>
+    </div>
+    <div class="ccard">
+        <ul>
+            <h3>Features</h3>
+            <li><p>The UPS can be start directly by battery group when no utility access in, which meets the emergent needs of user.</p></li>
+            <li><p>Strong cold start ability, which can do the cold start operation when full load.</p></li>
+            <li><p>Communication with computer can be realized by RS232 with corresponding monitoring software. The various parameters can be shown on the communication interface.</p></li>
+            <li><p>External SNMP adapter. The UPS with remote network management capability can provide real-time data for communication and management through a variety of network management systems.</p></li>
+            <li><p>Self-diagnosis function before start-up, avoid the risks that the failure may lead to.</p></li>
+            <li><p>The multi-protection such as overload, short-circuit, over-temperature, battery under voltage, battery over-charge and so on greatly ensure the system stability and reliability.</p></li>
+    </ul>
+</div>
+    </div>
+ <br>
+      <h1>Specifications</h1>
+      <div class="table-responsive">
+        <table>
+            <tr>
+                <th>MODEL</th>
+                <th>M 10</th>
+                <th>M 15</th>
+                <th>M 20</th>
+                <th>M 30</th>
+            </tr>
+            <tr>
+                <td>Capacity (KVA / KW)</td>
+                <td>10 / 8</td>
+                <td>15 / 12</td>
+                <td>20 / 16</td>
+                <td>30 / 24</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="5">INPUT</td>
+            </tr>
+            <tr>
+                <td>Operating voltage range</td>
+                <td colspan="4">380Vac(±20%), (3Ph+N+PE)</td>
+            </tr>
+            <tr>
+                <td>Operating frequency range</td>
+                <td colspan="4">50/60Hz (±5%)</td>
+            </tr>
+            <tr>
+                <td>Power factor</td>
+                <td colspan="4">>0.97 (with filter)</td>
+            </tr>
+            <tr>
+                <td>Max. input current(A)</td>
+                <td>14</td>
+                <td>18</td>
+                <td>23</td>
+                <td>34</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="5">OUTPUT</td>
+            </tr>
+            <tr>
+                <td>Output voltage</td>
+                <td colspan="4">220Vac(±0.5%) / 230Vac(±0.5%)</td>
+            </tr>
+            <tr>
+                <td>Output frequency</td>
+                <td colspan="4">50/60Hz(±0.5%)</td>
+            </tr>
+            <tr>
+                <td>Crest factor</td>
+                <td colspan="4">3:1 (max)</td>
+            </tr>
+            <tr>
+                <td>Efficiency</td>
+                <td colspan="4">> 92% online</td>
+            </tr>
+            <tr>
+                <td>Harmonic distortion (THD)</td>
+                <td colspan="4"><1.5% (Linear Load)</td>
+            </tr>
+            <tr>
+                <td>Power Factor</td>
+                <td colspan="4">0.8 (0.9 Optional)</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="5">BATTERY</td>
+            </tr>
+            <tr>
+                <td>Battery Voltage</td>
+                <td colspan="3">192 VDC</td>
+                <td>240 VDC</td>
+            </tr>
+            <tr>
+                <td>Battery Types</td>
+                <td colspan="4">SMF VRLA / TUBULAR</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="5">SYSTEM FEATURES</td>
+            </tr>
+            <tr>
+                <td>Transfer Time</td>
+                <td colspan="4">0 ms (Line mode ↔ Battery mode)</td>
+            </tr>
+            <tr>
+                <td>Overload</td>
+                <td colspan="4">>125% : 1min, >150%: 200ms</td>
+            </tr>
+            <tr>
+                <td>LED display</td>
+                <td colspan="4">Battery low, Mains status, Inverter, Bypass, UPS failure, Overload</td>
+            </tr>
+            <tr>
+                <td>LCD display</td>
+                <td colspan="4">I/O voltage, frequency, Battery voltage, Load percentage, Internal temperature</td>
+            </tr>
+            <tr>
+                <td>Communication interface</td>
+                <td colspan="4">RS232, SNMP (optional), Dry contact (optional)</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="5">ENVIRONMENTAL</td>
+            </tr>
+            <tr>
+                <td>Operating temperature</td>
+                <td colspan="4">0 ~ 40°C</td>
+            </tr>
+            <tr>
+                <td>Storage temperature</td>
+                <td colspan="4">-25°C ~ 55°C</td>
+            </tr>
+            <tr>
+                <td>Humidity range</td>
+                <td colspan="4">0 ~ 95% (non-condensing)</td>
+            </tr>
+            <tr>
+                <td>Altitude</td>
+                <td colspan="4"><1500m</td>
+            </tr>
+            <tr>
+                <td>Noise level</td>
+                <td colspan="4"><55dB</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="5">PHYSICAL</td>
+            </tr>
+            <tr>
+                <td>Dimension W x D x H (mm)</td>
+                <td>305 x 585 x 864</td>
+                <td>409 x 798 x 1044</td>
+                <td colspan="2">430 x 830 x 1100</td>
+            </tr>
+            <tr>
+                <td>Net weight (kg)</td>
+                <td>120</td>
+                <td>138</td>
+                <td>145</td>
+                <td>255</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="5">STANDARDS</td>
+            </tr>
+            <tr>
+                <td>Safety</td>
+                <td colspan="4">IEC/EN62040-1;IEC/EN62477-1</td>
+            </tr>
+            <tr>
+                <td>EMC</td>
+                <td colspan="4">IEC/EN62040-2;IEC61000-4-2;IEC61000-4-3;IEC61000-4-4;IEC61000-4-5;IEC61000-4-6;IEC61000-4-8</td>
+            </tr>
+            <tr>
+                <td colspan="5">Specifications are subject to change without prior notice.</td>
+            </tr>
+        </table>
+        <br>
+                
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="mytable">
+    <div id="table-container"  [ngClass]="{'hidden': !showTable6}">
+      <div  style="margin-left: 5%; margin-right: 2%;">
+      <u><h1>E Power-L Series</h1></u>
+      <div>
+        <div class="features-container">
+            <div class="ccard">
+    <ul>
+        <h3>Features</h3>
+        <li><p>Online Double Conversion design helps to output a pure sine wave, which is immune from the UPS input, so that the load can run steadily.</p></li>
+        <li><p>UPS transfers among different working mode without output interruption, thereby powering the load uninterruptedly.</p></li> 
+        <li><p>The range of AC input voltage is (380/400/415Vac) (-25%/+20%), minimizing transfer to battery mode, thereby greatly prolonging the battery life.</p></li>
+        <li><p>Wide input frequency ranging from 45Hz to 65Hz, ensures stability of UPS while generator connected.</p></li>   
+        <li><p>Intelligent battery management system and advanced battery auto float/boost charge technology, reduces the frequency of battery maintenance, greatly improves the battery efficiency and extends battery life.</p></li>
+        <li><p>Battery self-test: Battery is automatically tested at regular intervals.</p></li>
+        <li><p>Flexible battery configuration ranging from 360-384Vdc.</p></li> 
+        <li><p>Set the maximum output power of the generator when a smaller one than needed is employed to extend the battery duration time. In this case, the load is supplied by both the generator and battery.</p></li>   
+        
+        </ul>
+    </div>
+    <div class="ccard">
+        <ul>
+            <h3>Features</h3>
+            <li><p>N+X parallel redundant design, up to 6 units available, makes the configuration more flexible.</p></li>
+            <li><p>Any unit in parallel system fails, the faulty one will automatically cut off the output, and the load will be powered by the remained units.</p></li>
+            <li><p>It is easy to configure the parallel system just by connecting the parallel cables and doing proper settings.</p></li>
+            <li><p>Non-fixed Master-Slave relationship: Among several UPS in parallel, the unit startup first is Master UPS, the others are Slave. The master and slave may be exchanged.</p></li>    
+            <li><p>Double DSP control makes the whole system more stable and reliable.</p></li>
+            <li><p>Specially designed power walk in function, in which rectifier of each unit in parallel system will be turned on in sequence at intervals to avoid the sudden load on the generator, thereby reducing the cost of the generator required.</p></li>
+            <li><p>Multi-protection: AC input under/over voltage, overload, short-circuit, over-current, over bus voltage, over-temperature, fan failure, auxiliary power failure, battery under voltage, battery over-charge and so on.</p></li>
+    </ul>
+</div>
+    </div>
+ <br>
+      <h1>Specifications</h1>
+      <div class="table-responsive">
+        <table>
+            <tr>
+                <th>MODEL</th>
+                <th>EP10-L</th>
+                <th>EP20-L</th>
+                <th>EP30-L</th>
+                <th>EP40-L</th>
+                <th>EP60-L</th>
+                <th>EP80-L</th>
+                <th>EP100-L</th>
+                <th>EP120-L</th>
+                <th>EP160-L</th>
+            </tr>
+            <tr>
+                <td>Capacity</td>
+                <td>10kVA/8kW</td>
+                <td>20kVA/16kW</td>
+                <td>30kVA/24kW</td>
+                <td>40kVA/32kW</td>
+                <td>60kVA/48kW</td>
+                <td>80kVA/64kW</td>
+                <td>100kVA/80kW</td>
+                <td>120kVA/96kW</td>
+                <td>160kVA/128kW</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="10">INPUT</td>
+            </tr>
+            <tr>
+                <td>Operating voltage range</td>
+                <td colspan="9">380/400/415Vac (−25% / +20%), (3Ph + PE)</td>
+            </tr>
+            <tr>
+                <td>Operating frequency range</td>
+                <td colspan="9">50/60Hz (±5%)</td>
+            </tr>
+            <tr>
+                <td>Power factor</td>
+                <td colspan="9">>0.97</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="10">OUTPUT</td>
+            </tr>
+            <tr>
+                <td>Output voltage</td>
+                <td colspan="9">380/400/415Vac (±1%), (3Ph + N + PE)</td>
+            </tr>
+            <tr>
+                <td>Output frequency</td>
+                <td colspan="9">50/60Hz (±0.05%)</td>
+            </tr>
+            <tr>
+                <td>Harmonic distortion (THDv)</td>
+                <td colspan="9"><2% (Linear load)</td>
+            </tr>
+            <tr>
+                <td>Crest factor</td>
+                <td colspan="9">3:1 (Max)</td>
+            </tr>
+            <tr>
+                <td>Efficiency</td>
+                <td>88%</td>
+                <td>89%</td>
+                <td>90%</td>
+                <td>90%</td>
+                <td>90%</td>
+                <td>92%</td>
+                <td>92%</td>
+                <td>92.5%</td>
+                <td>92.5%</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="10">BYPASS</td>
+            </tr>
+            <tr>
+                <td>Rated voltage</td>
+                <td colspan="9">380/400/415Vac, (3Ph + N + PE)</td>
+            </tr>
+            <tr>
+                <td>Rated frequency</td>
+                <td colspan="9">50/60Hz</td>
+            </tr>
+            <tr>
+                <td>Voltage protection range</td>
+                <td colspan="9">Upper limit: +20% (+10%, +15%, +20% adjustable)<br>Lower limit: −40% (−10%, −20%, −30%, −40% adjustable)</td>
+            </tr>
+            <tr>
+                <td>Frequency protection range</td>
+                <td colspan="9">±10% (±2.5%, ±5%, ±10%, ±20% adjustable)</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="10">BATTERY</td>
+            </tr>
+            <tr>
+                <td>Battery voltage</td>
+                <td colspan="9">384Vdc (360~384Vdc)</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="10">SYSTEM FEATURES</td>
+            </tr>
+            <tr>
+                <td>Transfer time</td>
+                <td colspan="9">0 ms (Line mode ↔ Battery mode)</td>
+            </tr>
+            <tr>
+                <td>Overload</td>
+                <td colspan="9">Load<110%/60min; <125%/10min; <150%/1min, to Bypass</td>
+            </tr>
+            <tr>
+                <td>LED display</td>
+                <td colspan="9">Input, Inverter, Bypass, Battery, Output, Status</td>
+            </tr>
+            <tr>
+                <td>LCD display</td>
+                <td colspan="9">I / O voltage, frequency, power, power factor, battery voltage, current, battery status, load percentage, UPS status, history record, settings</td>
+            </tr>
+            <tr>
+                <td>Communication interface</td>
+                <td colspan="9">RS232, RS485, EPO, Dry contact (optional), SNMP card (Optional)</td>
+            </tr>
+            <tr>
+                <td>Optional</td>
+                <td colspan="9">Harmonic filter, SNMP adapter, LBS cables, battery temperature sensor, Bypass current-sharing indicator</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="10">ENVIRONMENTAL</td>
+            </tr>
+            <tr>
+                <td>Operating temperature</td>
+                <td colspan="9">0 ~ 40°C</td>
+            </tr>
+            <tr>
+                <td>Storage temperature</td>
+                <td colspan="9">-25°C ~ 55°C</td>
+            </tr>
+            <tr>
+                <td>Humidity range</td>
+                <td colspan="9">0 ~ 95% (Non-condensing)</td>
+            </tr>
+            <tr>
+                <td>Altitude</td>
+                <td colspan="9"><1500m</td>
+            </tr>
+            <tr>
+                <td>Noise level</td>
+                <td colspan="9"><58dB</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="10">PHYSICAL</td>
+            </tr>
+            <tr>
+                <td>Dimension W x D x H (mm)</td>
+                <td>350 x 650 x 1050</td>
+                <td colspan="2">430 x 830 x 1100</td>
+                <td>720 x 690 x 1400</td>
+                <td colspan="4">890 x 790 x 1600</td>
+            </tr>
+            <tr>
+                <td>Net weight (kg)</td>
+                <td>145</td>
+                <td>155</td>
+                <td>190</td>
+                <td>242</td>
+                <td>315</td>
+                <td>365</td>
+                <td>420</td>
+                <td>635</td>
+                <td>740</td>
+            </tr>
+            <tr>
+                <td>Shipping weight (kg)</td>
+                <td>160</td>
+                <td>170</td>
+                <td>215</td>
+                <td>267</td>
+                <td>340</td>
+                <td>400</td>
+                <td>460</td>
+                <td>680</td>
+                <td>785</td>
+            </tr>
+            <tr class="section-title">
+                <td colspan="10">STANDARDS</td>
+            </tr>
+            <tr>
+                <td>Safety</td>
+                <td colspan="9">IEC/EN 62040-2 (IEC 61000-4-2, IEC 61000-4-4, IEC 61000-4-5, IEC 61000-4-6, IEC 61000-4-8, IEC 61000-2-2)</td>
+            </tr>
+            <tr>
+                <td>EMC</td>
+                <td colspan="9">IEC/EN 62040-3</td>
+            </tr>
+        </table> 
+        <br>
+                       
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="mytable">
+    <div id="table-container"  [ngClass]="{'hidden': !showTable7}">
+      <div  style="margin-left: 5%; margin-right: 2%;">
+      <u><h1>E Power Series</h1></u>
+      <div>
+        <div class="features-container">
+            <div class="ccard">
+    <ul>
+        <h3>Features</h3>
+        <li><p>Online Double Conversion design helps to output a pure sine wave, which is immune from the UPS input, so that the load can run steadily.</p></li>
+    <li><p>UPS transfers among different working modes without output interruption, thereby powering the load uninterruptedly.</p></li>
+    <li><p>Full DSP control makes the whole system more stable and reliable.</p></li>
+    <li><p>The output power factor is 0.9, it greatly matches the load, reduces the harmonic pollution on the Grid and lowers the UPS running cost.</p></li>
+    <li><p>N+X parallel redundant design, up to 6 units available, makes the configuration more flexible.</p></li>
+    <li><p>Any unit in parallel system fails, the faulty one will automatically cut off the output, and the load will be powered by the remaining units.</p></li>
+    <li><p>It is easy to configure the parallel system just by connecting the parallel cables and doing proper settings.</p></li>
+    <li><p>Non-fixed Master-Slave relationship: Among several UPS in parallel, the unit startup first is Master UPS, the others are Slave. The master and slave may be exchanged.</p></li>
+    <li><p>Intelligent battery management system and advanced battery auto float/boost charge technology, reduces the frequency of battery maintenance, greatly improves the battery efficiency and extends battery life.</p></li>
+    <li><p>Battery self-test: Battery is automatically tested at regular intervals.</p></li>
+    <li><p>Flexible battery configuration ranging from 360-480V or 480-600Vdc.</p></li>
+    
+        </ul>
+    </div>
+    <div class="ccard">
+        <ul>
+            <h3>Features</h3>
+            <li><p>The range of AC input voltage is (380/400/415Vac) (-25%/+20%), minimizing transfer to battery mode, thereby greatly prolonging the battery life.</p></li>
+            <li><p>Wide input frequency ranging from 45Hz to 65Hz, ensures stability of UPS while generator connected.</p></li>
+            <li><p>1/1% or 1/2%/5% overload for 10min/1min/1min.</p></li>
+            <li><p>Specially designed power walk in function, in which rectifier of each unit in parallel system will be turned on in sequence at intervals to avoid the sudden load on the generator, thereby reducing the cost of the generator required.</p></li>
+            <li><p>Set the maximum output power of the generator when a smaller one than needed is employed to extend the battery duration time. In this case, the load is supplied by both the generator and battery.</p></li>
+            <li><p>Synchronize the output of two independent UPS systems (single unit or parallel) even when the two systems are operating at different modes (ECO/Converter) or on battery.</p></li>
+            <li><p>Self-diagnosis function will take place before start-up for system reliability.</p></li>
+            <li><p>Multi-protection: AC input under/over voltage, overload, short-circuit, over-current, over bus voltage, over-temperature, fan failure, auxiliary power failure, battery under voltage, battery over-charge and so on.</p></li>
+            <li><p>An emergency power-off button with transparent cover is embedded in the LCD control panel for emergency power-off.</p></li>
+            <li><p>Communication with computer can be realized by RS232 with corresponding monitoring software.</p></li>
+            <li><p>SNMP adapter (optional): for remote monitor through network.</p></li>
+    </ul>
+</div>
+    </div>
+ <br>
+
+      <h1>Specifications</h1>
+      <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>MODEL</th>
+                    <th>EP10</th>
+                    <th>EP20</th>
+                    <th>EP30</th>
+                    <th>EP40</th>
+                    <th>EP60</th>
+                    <th>EP80</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Capacity(VA/Watts)</td>
+                    <td>10kVA / 9kW</td>
+                    <td>20kVA / 18kW</td>
+                    <td>30kVA / 27kW</td>
+                    <td>40kVA / 36kW</td>
+                    <td>60kVA / 54kW</td>
+                    <td>80kVA / 72kW</td>
+                </tr>
+                <tr>
+                    <td>INPUT</td>
+                    <td colspan="6"></td>
+                </tr>
+                <tr>
+                    <td>Operating voltage range</td>
+                    <td colspan="6">380/400/415Vac (±25%) / ±20%, 3Ph+N+PE</td>
+                </tr>
+                <tr>
+                    <td>Operating frequency range</td>
+                    <td colspan="6">50/60Hz (±5%)</td>
+                </tr>
+                <tr>
+                    <td>Power factor</td>
+                    <td colspan="6">0.97 (with filter)</td>
+                </tr>
+                <tr>
+                    <td>OUTPUT</td>
+                    <td colspan="6"></td>
+                </tr>
+                <tr>
+                    <td>Output voltage</td>
+                    <td colspan="6">380/400/415Vac (±1%)</td>
+                </tr>
+                <tr>
+                    <td>Output frequency</td>
+                    <td colspan="6">50/60Hz (±0.05%)</td>
+                </tr>
+                <tr>
+                    <td>Harmonic distortion (THD)</td>
+                    <td colspan="6">< 3% (linear load)</td>
+                </tr>
+                <tr>
+                    <td>Crest factor</td>
+                    <td colspan="6">3:1 (max)</td>
+                </tr>
+                <tr>
+                    <td>Efficiency</td>
+                    <td>≥88%</td>
+                    <td>≥89%</td>
+                    <td colspan="2">≥90%</td>
+                    <td colspan="2">≥90.5%</td>
+                </tr>
+                <tr>
+                    <td>BYPASS</td>
+                    <td colspan="6"></td>
+                </tr>
+                <tr>
+                    <td>Rated voltage</td>
+                    <td colspan="6">380/400/415Vac</td>
+                </tr>
+                <tr>
+                    <td>Rated frequency</td>
+                    <td colspan="6">50/60Hz</td>
+                </tr>
+                <tr>
+                    <td>Voltage protection range</td>
+                    <td colspan="6">Upper limit: +20% (+10%, +15%, +20% adjustable) <br> Lower limit: -40% (-10%, -20%, -30%, -40% adjustable)</td>
+                </tr>
+                <tr>
+                    <td>Frequency protection range</td>
+                    <td colspan="6">±10% (±2.5%, ±5%, ±10%, ±20% adjustable)</td>
+                </tr>
+                <tr>
+                    <td>BATTERY</td>
+                    <td colspan="6"></td>
+                </tr>
+                <tr>
+                    <td>Battery voltage</td>
+                    <td colspan="6">384Vdc (360~384Vdc)</td>
+                </tr>
+                <tr>
+                    <td>SYSTEM FEATURES</td>
+                    <td colspan="6"></td>
+                </tr>
+                <tr>
+                    <td>Transfer time</td>
+                    <td colspan="6">0 ms (Line mode → Battery mode)</td>
+                </tr>
+                <tr>
+                    <td>Overload</td>
+                    <td colspan="6">Load ≤ 110%/60mins; ≤ 125%/10mins; ≤ 150%/1min; to Bypass</td>
+                </tr>
+                <tr>
+                    <td>LED display</td>
+                    <td colspan="6">Input, Inverter, Bypass, Battery, Output, Status</td>
+                </tr>
+                <tr>
+                    <td>LCD display</td>
+                    <td colspan="6">I/O voltage, frequency, power, power factor, battery voltage, current, battery status, load percentage, UPS status, history record, settings</td>
+                </tr>
+                <tr>
+                    <td>Communication interface</td>
+                    <td colspan="6">Dry contact, RS232, RS485, SNMP card (Optional)</td>
+                </tr>
+                <tr>
+                    <td>Optional</td>
+                    <td colspan="6">Harmonic filter, SNMP adapter, LBS cables, battery temperature sensor, Bypass current-sharing inductor</td>
+                </tr>
+                <tr>
+                    <td>ENVIRONMENTAL</td>
+                    <td colspan="6"></td>
+                </tr>
+                <tr>
+                    <td>Operating temperature</td>
+                    <td colspan="6">0 ~ 40°C</td>
+                </tr>
+                <tr>
+                    <td>Storage temperature</td>
+                    <td colspan="6">-25 ~ 55°C</td>
+                </tr>
+                <tr>
+                    <td>Humidity range</td>
+                    <td colspan="6">0 ~ 95% (non-condensing)</td>
+                </tr>
+                <tr>
+                    <td>Altitude</td>
+                    <td colspan="6">< 1500m</td>
+                </tr>
+                <tr>
+                    <td>Noise level</td>
+                    <td colspan="6">< 65dB</td>
+                </tr>
+                <tr>
+                    <td>PHYSICAL</td>
+                    <td colspan="6"></td>
+                </tr>
+                <tr>
+                    <td>Dimension W × D × H (mm)</td>
+                    <td>350 × 650 × 1050</td>
+                    <td>350 × 650 × 1050</td>
+                    <td>430 × 830 × 1100</td>
+                    <td>430 × 830 × 1100</td>
+                    <td>720 × 600 × 1400</td>
+                    <td>720 × 600 × 1400</td>
+                </tr>
+                <tr>
+                    <td>Net weight (kg)</td>
+                    <td>148</td>
+                    <td>193</td>
+                    <td>230</td>
+                    <td>255</td>
+                    <td>386</td>
+                    <td>426</td>
+                </tr>
+                <tr>
+                    <td>Shipping weight (kg)</td>
+                    <td>168</td>
+                    <td>233</td>
+                    <td>293</td>
+                    <td>288</td>
+                    <td>432</td>
+                    <td>472</td>
+                </tr>
+                <tr>
+                    <td>STANDARDS</td>
+                    <td colspan="6"></td>
+                </tr>
+                <tr>
+                    <td>Safety</td>
+                    <td colspan="6">IEC/EN62040-1</td>
+                </tr>
+                <tr>
+                    <td>EMC</td>
+                    <td colspan="6">IEC/EN62040-2, IEC61000-4-2, IEC61000-4-3, IEC61000-4-4, IEC61000-4-5, IEC61000-4-6, IEC61000-4-8</td>
+                </tr>
+                <tr>
+                    <td>Performance</td>
+                    <td colspan="6">IEC 62040-3</td>
+                </tr>
+                <tr>
+                    <td colspan="7">Specifications are subject to change without prior notice.</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h3>Specifications for EP 100 to EP 800</h3>
+        <table>
+                <tr>
+                    <th>MODEL</th>
+                    <th>EP100</th>
+                    <th>EP120</th>
+                    <th>EP160</th>
+                    <th>EP200</th>
+                    <th>EP300</th>
+                    <th>EP400</th>
+                    <th>EP500~12P</th>
+                    <th>EP600~12P</th>
+                    <th>EP800~12P</th>
+                </tr>
+            <tbody>
+                <tr>
+                    <td>Capacity(VA/Watts)</td>
+                    <td>100kVA / 90kW</td>
+                    <td>120kVA / 108kW</td>
+                    <td>160kVA / 144kW</td>
+                    <td>200kVA / 180kW</td>
+                    <td>300kVA / 270kW</td>
+                    <td>400kVA / 360kW</td>
+                    <td>500kVA / 450kW</td>
+                    <td>600kVA / 540kW</td>
+                    <td>800kVA / 720kW</td>
+                </tr>
+                <tr>
+                    <td>INPUT</td>
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <td>Operating voltage range</td>
+                    <td colspan="9">380/400/415Vac (±25%) / ±20%, 3Ph+N+PE</td>
+                </tr>
+                <tr>
+                    <td>Operating frequency range</td>
+                    <td colspan="9">50/60Hz (±5%)</td>
+                </tr>
+                <tr>
+                    <td>Power factor</td>
+                    <td colspan="9">0.97 (with filter)</td>
+                </tr>
+                <tr>
+                    <td>OUTPUT</td>
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <td>Output voltage</td>
+                    <td colspan="9">380/400/415Vac (±1%)</td>
+                </tr>
+                <tr>
+                    <td>Output frequency</td>
+                    <td colspan="9">50/60Hz (±0.05%)</td>
+                </tr>
+                <tr>
+                    <td>Harmonic distortion (THD)</td>
+                    <td colspan="9">< 2% (linear load)</td>
+                </tr>
+                <tr>
+                    <td>Crest factor</td>
+                    <td colspan="9">3:1 (max)</td>
+                </tr>
+                <tr>
+                    <td>Efficiency</td>
+                    <td>>92%</td>
+                    <td>>92.5%</td>
+                    <td>>93%</td>
+                    <td>>93.5%</td>
+                    <td colspan="4"></td>
+                    <td>>94%</td>
+                </tr>
+                <tr>
+                    <td>BYPASS</td>
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <td>Rated voltage</td>
+                    <td colspan="9">380/400/415Vac</td>
+                </tr>
+                <tr>
+                    <td>Rated frequency</td>
+                    <td colspan="9">50/60Hz (auto-sensing)</td>
+                </tr>
+                <tr>
+                    <td>Voltage protection range</td>
+                    <td colspan="9">Upper limit: +20% (+10%, +15%, +20% adjustable) <br> Lower limit: -40% (-10%, -20%, -30%, -40% adjustable)</td>
+                </tr>
+                <tr>
+                    <td>Frequency protection range</td>
+                    <td colspan="9">±10% (±2.5%, ±5%, ±10%, ±20% adjustable)</td>
+                </tr>
+                <tr>
+                    <td>BATTERY</td>
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <td>Battery voltage</td>
+                    <td>384Vdc (360~384Vdc)</td>
+                    <td colspan="6">384Vdc (360~408Vdc)</td>
+                    <td>480Vdc</td>
+                    <td>600Vdc</td>
+                </tr>
+                <tr>
+                    <td>SYSTEM FEATURES</td>
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <td>Transfer time</td>
+                    <td colspan="9">0 ms (Line mode → Battery mode)</td>
+                </tr>
+                <tr>
+                    <td>Overload</td>
+                    <td colspan="9">Load ≤ 110%/60mins; ≤ 125%/10mins; ≤ 150%/1min; to Bypass</td>
+                </tr>
+                <tr>
+                    <td>LED display</td>
+                    <td colspan="9">Input, Inverter, Bypass, Battery, Output, Status</td>
+                </tr>
+                <tr>
+                    <td>LCD display</td>
+                    <td colspan="9">I/O voltage, frequency, power, power factor, battery voltage, current, battery status, load percentage, UPS status, history record, settings</td>
+                </tr>
+                <tr>
+                    <td>Communication interface</td>
+                    <td colspan="9">Dry contact, RS232, RS485, SNMP card (Optional)</td>
+                </tr>
+                <tr>
+                    <td>Optional</td>
+                    <td colspan="9">Harmonic filter, SNMP adapter, LBS cables, battery temperature sensor, Bypass current-sharing inductor</td>
+                </tr>
+                <tr>
+                    <td>ENVIRONMENTAL</td>
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <td>Operating temperature</td>
+                    <td colspan="9">0 ~ 40°C</td>
+                </tr>
+                <tr>
+                    <td>Storage temperature</td>
+                    <td colspan="9">-25 ~ 55°C</td>
+                </tr>
+                <tr>
+                    <td>Humidity range</td>
+                    <td colspan="9">0 ~ 95% (non-condensing)</td>
+                </tr>
+                <tr>
+                    <td>Altitude</td>
+                    <td colspan="9">< 1500m</td>
+                </tr>
+                <tr>
+                    <td>Noise level</td>
+                    <td>< 65dB</td>
+                    <td colspan="7"></td>
+                    <td>< 70dB</td>
+                </tr>
+                <tr>
+                    <td>PHYSICAL</td>
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <td>Dimension W × D × H (mm)</td>
+                    <td>880 × 750 × 1600(EP)</td>
+                    <td>1200 × 800 × 1600(EP)</td>
+                    <td>1400 × 1000 × 1900(6P)</td>
+                    <td>1600 × 1000 × 1900(12P)</td>
+                    <td colspan="4">2580 × 1000 × 1900(500)/12P</td>
+                    <td>3260 × 1040 × 1900(600)/12P</td>
+                </tr>
+                <tr>
+                    <td>Net weight (kg)</td>
+                    <td>655/1300</td>
+                    <td>695/1450</td>
+                    <td>895/1645</td>
+                    <td>1030/1715</td>
+                    <td>1230/2340</td>
+                    <td>1560/2655</td>
+                    <td>1640/2505</td>
+                    <td>3710/2505</td>
+                    <td>3950/3950</td>
+                </tr>
+                <tr>
+                    <td>Shipping weight (kg)</td>
+                    <td>695/1370</td>
+                    <td>760/1570</td>
+                    <td>1015/1765</td>
+                    <td>1160/1875</td>
+                    <td>1450/2555</td>
+                    <td>1730/2985</td>
+                    <td>2005/3170</td>
+                    <td>3780/3170</td>
+                    <td>5245/5245</td>
+                </tr>
+                <tr>
+                    <td>STANDARDS</td>
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <td>Safety</td>
+                    <td colspan="9">IEC/EN62040-1</td>
+                </tr>
+                <tr>
+                    <td>EMC</td>
+                    <td colspan="9">IEC/EN62040-2,IEC61000-4-2,IEC61000-4-3,IEC61000-4-4,IEC61000-4-5,IEC61000-4-6,IEC61000-4-8</td>
+                </tr>
+                <tr>
+                    <td>Performance</td>
+                    <td colspan="9">IEC 62040-3</td>
+                </tr>
+                <tr>
+                    <td colspan="10">Specifications are subject to change without prior notice.</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+  </div>
+  </div>
+  </div>
+  </div>
+    
