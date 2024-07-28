@@ -1,0 +1,118 @@
+
+<nav class="navigation-bar">
+  <div class="container">   
+    <img  class="responsive-img" src="/assets/Screenshot 2024-03-02 132840.png" >
+    <nav  class="navbar navbar-custom" [ngClass]="{'expanded': menuOpen}">
+      <ul class="nav-list" [ngClass]="{'open': menuOpen}" style="color: rgb(255, 255, 255); ">
+          <li><u><h5 class="item" id="item" routerLink="/home" >Home</h5></u></li>
+          <li><u><h5 class="item" id="item" routerLink="/products">Products</h5></u></li>
+          <li><u><h5 class="item" id="item" routerLink="/contact">Contact</h5></u></li>
+          <li><u><h5 class="item" id="item" routerLink="/help">Help</h5> </u></li>
+          <li><u><h5 class="item" id="item" routerLink="/solutions">Solutions</h5></u></li>
+      </ul>
+        <a  href="javascript:void(0);" class="icon" (click)="toggleMenu()">
+        &#9776;
+      </a>
+  </nav>
+  </div> 
+</nav> 
+
+<div class="services-section" style="background-color: #001f3f; padding: 50px 0;">
+  <div class="contain">
+    <h2 style="color: white; text-align: center; margin-bottom: 40px; font-size: 36px;">Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="/assets/ups.png" alt="UPS" class="service-icon">
+        <h3 class="service-title">UPS</h3>
+        <p class="service-description">Reliable power backup solutions for all your needs.</p>
+      </div>
+      <div class="service-card">
+        <img src="/assets/amc.png" alt="AMC" class="service-icon">
+        <h3 class="service-title">AMC</h3>
+        <p class="service-description">Annual Maintenance Contracts to keep your systems running smoothly.</p>
+      </div>
+      <div class="service-card">
+        <img src="/assets/invertor.png" alt="Inverter" class="service-icon">
+        <h3 class="service-title">Inverter</h3>
+        <p class="service-description">Efficient and reliable inverters for continuous power supply.</p>
+      </div>
+      <div class="service-card">
+        <img src="/assets/repairs.png" alt="Repairs" class="service-icon">
+        <h3 class="service-title">Repairs</h3>
+        <p class="service-description">Expert repair services to get your systems back on track.</p>
+      </div>
+      <div class="service-card">
+        <img src="/assets/batteries.png" alt="Batteries" class="service-icon">
+        <h3 class="service-title">Batteries</h3>
+        <p class="service-description">High-quality batteries to ensure uninterrupted power.</p>
+      </div>
+      <div class="service-card">
+        <img src="/assets/maintenance.png" alt="Maintenance" class="service-icon">
+        <h3 class="service-title">Maintenance</h3>
+        <p class="service-description">Regular maintenance services to extend the life of your equipment.</p>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+
+
+
+
+<div class="container2">
+  <div class="box">
+    <div class="myclass">
+        <h2 style="font-weight: bold; color:rgb(0, 0, 0);">Customer Service Care</h2>
+        <p style="width: 97%;">At VP Tronics, our commitment to exceptional customer care is ingrained in our core values. We take pride in our dedicated support team, armed with comprehensive knowledge to address your inquiries promptly and effectively. Proactive communication, a user-friendly knowledge base, and efficient problem resolution define our customer-centric approach. We continuously seek ways to improve, valuing your feedback to refine our processes. With accessible channels for communication and a commitment to putting you, the customer, at the center of our operations, VPTronics ensures a seamless and satisfying experience. Trust us not just for reliable UPS products but for unparalleled customer care, making us your preferred partner in power solutions.
+        </p>
+        <h3>Contact Us for any help</h3>
+        <button  class=" btn btn-info" (click)="navigation('/contact')" style="width: 25%;">Click</button><br>
+        <br>
+        <img src="/assets/Screenshot 2024-02-04 000342.png" style="width: 30%; height: 30%;">
+      </div>
+   </div>
+<div class="card2">
+  <h2 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size:40px; font-weight:bolder">Need Help!</h2>
+        <p>Feel free to ask your query</p>
+        <form [formGroup]="help" (ngSubmit)="myhelp()">
+            <input type="text" [class.is-invalid] = "help.get('Name')?.invalid  && help.get('Name')?.touched" class="form-control "style="margin-top:5%" formControlName="Name" placeholder="Name" >
+            <small [class.d-none]="help.get('Name')?.valid || help.get('Name')?.untouched" class="text-danger">required</small>
+            <input [class.is-invalid] = "help.get('Email')?.invalid  && help.get('Email')?.touched" style="margin-top: 5%;" class="form-control" formControlName="Email" placeholder="Email" >
+            <small [class.d-none]="help.get('Email')?.valid || help.get('Email')?.untouched" class="text-danger">Enter Valid Email</small>
+            <input [class.is-invalid] = "help.get('Phone')?.invalid  && help.get('Phone')?.touched"  style="margin-top: 5%;" class="form-control" formControlName="Phone" placeholder="Contact Number" >
+            <small [class.d-none]="help.get('Phone')?.valid || help.get('Phone')?.untouched" class="text-danger">required</small>
+            <input style="margin-top:5%; " class="form-control" formControlName="CompanyName" placeholder="Company Name" >            
+            <textarea [class.is-invalid] = "help.get('Query')?.invalid  && help.get('Query')?.touched" style="margin-top: 5%; height: 150px;" class="form-control" formControlName="Query" placeholder="Query"></textarea>
+            <small [class.d-none]="help.get('Query')?.valid || help.get('Query')?.untouched" class="text-danger">required</small>
+            <button type="submit" class="btn btn-success" style="margin-left: 70%;margin-top:50px; width:30%">Submit</button>
+        </form>
+        <app-loader [loading]="loading"></app-loader>
+</div>
+</div>
+
+<div class="card3">
+  <div class="container3">
+    <div style="display: flex; justify-content: center;gap: 30px; margin-top: 1%;">
+      <li style="list-style: none; margin-left: 10;"></li>  <a href=" https://wa.me/919028249904" target="_blank"><img src="/assets/whatsapp.png" style="width: 35px;mix-blend-mode: darken; "></a>
+      <br>
+      <li style="list-style: none;"><a href="http://www.instagram.com/santoshgaikwad987"><img src="/assets/instagram.png" style="width: 60px;mix-blend-mode: darken; margin-top: -17%;"></a></li>
+      <br>
+      <li style="list-style: none;"><a href="http://www.facebook.com/profile.php?id=100005470960934"><img src="/assets/facebook1.jpeg" style="width: 35px; mix-blend-mode: darken;"></a></li>
+    </div>
+
+    <div>
+      <ul style="color: black; list-style: none; display: flex; justify-content: center; gap: 20px; margin-top: 10px; flex-wrap: wrap;">
+        <li><a style="color: black; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large; text-decoration: none;" routerLink="/products">Products</a></li>
+        <br>
+        <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;text-decoration: none;" routerLink="/contact">Contact</a></li>
+        <br>
+        <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;text-decoration: none;" routerLink="/solutions">Solutions</a></li>
+        <br>
+        <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: large;text-decoration: none;" routerLink="/help">Help</a></li>
+      </ul>
+    </div>
+    <div style="color: #000000; font-weight: 1500px;">
+      &#64; Copyright 
+    </div>
+  </div>
+</div>

@@ -1,0 +1,319 @@
+
+<nav class="navigation-bar">
+  <div class="container">   
+    <img  class="responsive-img" src="/assets/Screenshot 2024-03-02 132840.png" >
+    <nav  class="navbar navbar-custom" [ngClass]="{'expanded': menuOpen}">
+      <ul class="nav-list" [ngClass]="{'open': menuOpen}" style="color: rgb(255, 255, 255); ">
+          <li><u style="font-weight: lighter;"><h5 class="item" id="item" routerLink="/home" >Home</h5></u></li>
+          <li><u><h5 class="item" id="item" routerLink="/products">Products</h5></u></li>
+          <li><u><h5 class="item" id="item" routerLink="/contact">Contact</h5></u></li>
+          <li><u><h5 class="item" id="item" routerLink="/help">Help</h5> </u></li>
+          <li><u><h5 class="item" id="item" routerLink="/solutions">Solutions</h5></u></li>
+      </ul>
+        <a  href="javascript:void(0);" class="icon" (click)="toggleMenu()">
+        &#9776;
+      </a>
+  </nav>
+  </div> 
+</nav> 
+
+<div class="container4">
+  @if (images) {
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img style="filter: brightness(60%);" [src]="images[0]" alt="Random first slide" />
+        </div>
+        <div class="carousel-caption">
+          <h1 style=" font-weight: lighter;text-shadow: 3px 3px #000000">VP Tronics Pvt Ltd</h1>
+          <br>
+          <h3 style=" font-weight: lighter;text-shadow: 3px 3px #000000">Welcome to India's most reputed manufacturers of Uninterruptible Power Supply Systems (UPS) & Solutions</h3>
+          <br>
+          <div class="button-container">
+          <button  class=" btn btn-info" (click)="navigation('/products')" style="background-color: white;border-color: white;">Products</button>
+          <br>
+          <button  class=" btn btn-info" (click)="navigation('/contact')" style="background-color: white; border-color: white;">GET IN TOUCH</button>
+        </div>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img style="filter: brightness(50%);" [src]="images[1]" alt="Random second slide" />
+        </div>
+        <div class="carousel-caption">
+          <h1 style="  font-weight: lighter;text-shadow: 3px 3px #000000">Providing Best And Proven Solutions</h1>
+          <br>
+          <h4 style="  font-weight: lighter;text-shadow: 3px 3px #000000" >A COMPLETE POWER BACKUP SOLUTION FOR EVERYONE!
+            We provide versatile power products and solutions for homes, offices, small businesses, and large industries, meeting high standards for various applications.</h4>
+            <br>
+            <div class="button-container">
+            <button  class=" btn btn-info" (click)="navigation('/solutions')" style="background-color: white;border-color: white;">Solutions</button>
+            <br>
+            <button  class=" btn btn-info" (click)="navigation('/help')" style=" background-color: white; border-color: white;">GET IN TOUCH</button>
+          </div>
+          </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img style="filter: brightness(50%);"[src]="images[2]" alt="Random third slide" />
+        </div>
+        <div class="carousel-caption">
+          <h1 style=" font-weight: lighter;text-shadow: 3px 3px #000000">THE BEST POWER PROTECTION & POWER BACKUP SOLUTIONS</h1>
+          <br>
+          <h4 style=" font-weight: lighter;text-shadow: 3px 3px #000000">To ensure the protection of electrical equipments and uninterruptable power supply, we offer extremely reliable and high quality UPS systems manufactured with advanced technology to meet international standards.</h4>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  }
+
+  <div class="about">
+    <h1 style="text-align: center;">
+      <span style="color: rgb(0, 0, 84);">About  </span> 
+      <span style="color: rgb(0, 60, 255);"> Us</span>
+    </h1>
+    <br>
+    <div style="display: flex; justify-content: center;  flex-wrap: wrap;">
+      <div class="aboutimage">
+        <img src="assets/about.jpg" class="myimage scroll-animation">
+      </div>
+    <p class="scroll-animation">Welcome to VP Tronics Pvt Ltd, a leading name in the field of Uninterruptible Power Supply (UPS) systems and solutions. 
+      With a legacy of excellence and innovation, we are committed to delivering reliable and high-quality power backup solutions that cater to a wide range of applications, from homes and small businesses to large industrial setups. 
+      Our expertise lies in manufacturing state-of-the-art UPS systems designed to meet international standards, ensuring the protection and uninterrupted operation of your critical equipment. At VP Tronics Pvt Ltd, we pride ourselves on our dedication to customer satisfaction, cutting-edge technology, 
+      and our mission to provide the best power protection and backup solutions in the industry.</p>
+    </div>
+
+  </div>
+<div class="container2">
+  <br>
+  <h1 style="text-align: center; color: white;">Products</h1>
+  <div class="row">
+    <div class="column">
+      <div class="card1 scroll-animation">
+        <img src="/assets/Product1.png">
+        <h4>Online UPS HF Series (1-3KVA)</h4>
+        <button class=" btn btn-primary" (click)="navigation('/products')">Read More</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card1 scroll-animation">
+        <img  src="/assets/Product2.png">
+        <h4>Online UPS XP Series (1K - 14K)</h4>
+        <button class=" btn btn-primary" (click)="navigation('/products')">Read More</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card1 scroll-animation">
+        <img  src="/assets/Product3.png">
+        <h4>Online UPS 3HF3310 Series 3:3 phase PF 0.9</h4>
+        <button class=" btn btn-primary" (click)="navigation('/products')">Read More</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card1 scroll-animation">
+        <img  src="/assets/Product4.png">
+        <h4>Online UPS GP Series (6-10KVA)</h4>
+        <button class=" btn btn-primary" (click)="navigation('/products')">Read More</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card1 scroll-animation">
+        <img  src="/assets/Product7.png">
+        <h4>Online UPS E-Power Series (10-80KVA)</h4>
+        <button class=" btn btn-primary" (click)="navigation('/products')">Read More</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card1 scroll-animation">
+        <img src="/assets/Product5.png">
+        <h4>Online UPS Master Series (10-30KVA)</h4>
+        <button class=" btn btn-primary" (click)="navigation('/products')">Read More</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card1 scroll-animation">
+        <img  src="/assets/Product6.png" >
+        <h4>Online UPS EPower-L Series(10-60KVA)</h4>
+        <button class=" btn btn-primary" (click)="navigation('/products')">Read More</button>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card1 scroll-animation">
+        <img src="/assets/Product7.png">
+        <h4>Online UPS E-Power Series (100-800KVA)</h4>
+        <button class=" btn btn-primary" (click)="navigation('/products')">Read More</button>
+      </div>
+      <br><br>
+    </div>
+    <br>
+  </div>
+
+<!-- ---------------------------------------------------------------3 cards ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------- -->
+
+
+<div class="parallax2">
+  <br>
+  <h1 style="color: white; text-align: center;">Solutions</h1>
+<div class="column2">
+ 
+  <div class="card3 scroll-animation" >
+    <img src="assets/bank.webp">
+    <h4 style="color: rgb(0, 0, 84);">Banking and Finanace</h4>
+  </div>
+  <div class="card3 scroll-animation">
+    <img src="assets/automobile.webp" >
+    <h4 style="color: rgb(0, 0, 84);">Automobile Services</h4>
+
+  </div>
+  <div class="card3 scroll-animation">
+    <img src="assets/industry.webp">
+    <h4 style="color: rgb(0, 0, 84);">Industry</h4>
+  </div>
+
+  <div class="card3 scroll-animation">
+    <img src="assets/petrol.png" >
+    <h4 style="color: rgb(0, 0, 84);">Petrol Pumps</h4>
+  </div>
+
+  <div class="card3 scroll-animation" style="margin-bottom: 3%;">
+    <img src="assets/education.webp" >
+    <h4 style="color: rgb(0, 0, 84);">Educational Institutes</h4>
+  </div>
+  <div class="card3 scroll-animation" style="margin-bottom: 3%;">
+    <img src="assets/health.svg" style="mix-blend-mode:multiply;">
+    <h4 style="color: rgb(0, 0, 84);">HealthCare </h4>
+  </div>
+  <div class="card3 scroll-animation" style="margin-bottom: 3%;">
+    <img src="assets/offices.webp" >
+    <h4 style="color: rgb(0, 0, 84);">IT Sector and offices</h4>
+  </div>
+  <div class="card3 scroll-animation" style="margin-bottom: 3%;">
+    <img src="assets/mall.png">
+    <h4 style="color: rgb(0, 0, 84);">Malls and Markets</h4>
+  </div>
+</div>
+</div>
+
+<div class="connect">
+  <br>
+  <h1 style="text-align: center;">
+    <span style="color: rgb(0, 0, 84);">Connect  </span> 
+    <span style="color: rgb(0, 60, 255);"> with us</span>
+  </h1>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <iframe class="map scroll-animation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.6852270430177!2d73.91912857465167!3d18.49791196986709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c16a390ac845%3A0x6f610dab384d1c4a!2sVP%20Tronics%20Pvt.%20Ltd.%2CPlot%20no.%204%2F8%2B9%2B40%2C%20Ramtekadi%2C%20Hadapsar%20Pune%20411028!5e0!3m2!1sen!2sin!4v1718961680872!5m2!1sen!2sin"    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="mycontainer">
+    <div class="row1">
+      <div class="mycard scroll-animation">
+        <i class="bi bi-send-fill"></i>
+        <h3>Email</h3>
+        <hr class="divider"/>
+        <br>
+        <h3
+          class="clickable red"
+          (click)="openEmail('vpups.pune@gmail.com')"
+        >
+          vpups.pune&#64;gmail.com
+        </h3>
+      </div>
+      <div class="mycard scroll-animation">
+        <i class="bi bi-phone-fill"></i>
+        <h3>Phone</h3>
+        <hr class="divider" />
+        <br>
+        <h3 class="gray">+91 9028249904</h3>
+      </div>
+      <br>
+      
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="parallax2">
+  <br><br>
+  <h1 style="text-align: center;">
+    <span style="color: rgb(255, 255, 255);">Why  </span> 
+    <span style="color: rgb(0, 60, 255);"> Choose Us</span>
+  </h1>
+  
+  <div class="container5">
+    <div class="card4 scroll-animation">
+      <img src="assets/shrength.png">
+      <h2 style="color: rgb(0, 0, 84);">Our Strengths</h2>
+      <ul style="display: flex; list-style: none; gap: 20px;">
+        <li>
+          <h5 class="title">Trusted & Reliable Brand: <span class="description">Our brand is synonymous with reliability and trust in the power solutions industry.</span></h5>
+
+        </li>
+        <li>
+          <h5 class="title">Modern Compact Design: <span class="description">Our sleek, modern designs fit seamlessly into any environment.</span></h5>
+
+        </li>
+      </ul>
+    </div>
+    <div class="card4 scroll-animation">
+      <img src="assets/network.jpg">
+      <h2 style="color: rgb(0, 0, 84);">Our Network</h2>
+      <ul style="display: flex; list-style: none; gap: 20px;">
+        <li>    <h5 class="title">Round the clock Service: <span class="description">24/7 service availability for uninterrupted support.</span></h5>
+        </li>
+        <li>    <h5 class="title">550+ Channel Partners: <span class="description">Over 550 channel partners nationwide for easy access and support.</span></h5>
+        </li>
+      </ul>
+    </div>
+    <div class="card4 scroll-animation">
+      <img src="assets/quality.jpg">
+      <h2 style="color: rgb(0, 0, 84);">Product Quality</h2>
+      <ul style="display: flex; list-style: none; gap: 20px;">
+      <li>    <h5 class="title">Highest Quality Products: <span class="description">We deliver only the highest quality products, guaranteed.</span></h5>
+      </li>
+      <li>    <h5 class="title">Wide Range of Products: <span class="description">Our extensive product range meets all your power solution needs.</span></h5>
+      </li>
+    </ul>
+    </div>
+    <div class="card4 scroll-animation">
+      <img src="assets/economy.png" style="mix-blend-mode:hard-light;">
+      <h2 style="color: rgb(0, 0, 84);">Economical Solutions</h2>
+      <ul style="display: flex; list-style: none; gap: 20px;">
+      <li>    <h5 class="title">Economical Power Solutions: <span class="description">We offer cost-effective power solutions without compromising quality.</span></h5>
+      </li>
+      <li>    <h5 class="title">Customize Power Solution: <span class="description">Tailored power solutions designed specifically for your requirements.</span></h5>
+      </li>
+    </ul>
+    </div>
+  </div>
+<br>
+</div>
+</div>
+
+  <div class="card">
+    <div class="container3">
+      <div style="display: flex; justify-content: center;gap: 30px; margin-top: 1%;">
+        <li style="list-style: none; margin-left: 10;"></li>  <a href=" https://wa.me/919028249904" target="_blank"><img src="/assets/whatsapp.png" style="width: 35px;mix-blend-mode: darken; "></a>
+        <br>
+        <li style="list-style: none;"><a href="http://www.instagram.com/santoshgaikwad987"><img src="/assets/instagram.png" style="width: 60px;mix-blend-mode: darken; margin-top: -17%;"></a></li>
+        <br>
+        <li style="list-style: none;"><a href="http://www.facebook.com/profile.php?id=100005470960934"><img src="/assets/facebook1.jpeg" style="width: 35px; mix-blend-mode: darken;"></a></li>
+      </div>
+
+      <div>
+        <ul style="color: black; list-style: none; display: flex; justify-content: center; gap: 20px; margin-top: 10px; flex-wrap: wrap;">
+          <li><a style="color: black; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large; text-decoration: none;" routerLink="/products">Products</a></li>
+          <br>
+          <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;text-decoration: none;" routerLink="/contact">Contact</a></li>
+          <br>
+          <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;text-decoration: none;" routerLink="/solutions">Solutions</a></li>
+          <br>
+          <li><a style="color: rgb(0, 0, 0); font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: large;text-decoration: none;" routerLink="/help">Help</a></li>
+        </ul>
+      </div>
+      <div style="color: #000000; font-weight: 1500px;">
+        &#64; Copyright 
+      </div>
+    </div>
+  </div>
+
+
+
+      
