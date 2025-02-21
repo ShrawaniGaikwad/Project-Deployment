@@ -1,0 +1,9 @@
+<div class="chatbot-container" *ngIf="isChatbotVisible">
+  <iframe style="width: 400px; height: 600px; border: none;"
+    src="https://app.fastbots.ai/embed/cm09n3rxy082osvbg55u9v4hn" title="Chatbot"></iframe>
+</div>
+
+<!-- Toggle button -->
+<button class="chatbot-toggle-btn" (click)="toggleChatbot()" style="border-radius: 60%;">
+  <img src="assets/bot.png" style="width: 70px;height: 60px; border-radius: 50%" />
+</button>

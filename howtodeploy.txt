@@ -1,0 +1,18 @@
+1.Building command
+ng build --configuration=production
+
+2.We get a dist folder inside that we have browser folder
+
+3.Create a zip of browser folder
+
+4.Open mail and go to cPanel link enter username sabtwl and password.
+
+5.Go to file manager and then public_html.
+
+4.First delete all folders and index.html from cPanel which are there in browser folder so that we can upload new ones.
+
+5.Now click on upload then upload the zip file then extract.
+
+6.A browser folder is extracted select all the files and click on move from /public_html/browser/ to /public_html/ 
+
+7.Done

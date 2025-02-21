@@ -1,6 +1,7 @@
 import { Component, Renderer2, ElementRef, Inject, PLATFORM_ID, AfterViewInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router ,NavigationEnd} from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
+import { ViewportScroller } from '@angular/common'; // <-- Import this
 
 @Component({
   selector: 'app-solutions',
@@ -9,18 +10,16 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class SolutionsComponent implements AfterViewInit {
   showForm: boolean = false;
-  menuOpen = false;
 
   constructor(
     private _router: Router,
     private renderer: Renderer2,
     private el: ElementRef,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private router: Router,
+    private viewportScroller: ViewportScroller
   ) { }
 
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
-  }
 
   link(myroute: string) {
     console.log(myroute);
@@ -59,32 +58,16 @@ export class SolutionsComponent implements AfterViewInit {
 
       window.addEventListener('scroll', handleScrollAnimation);
       handleScrollAnimation(); // Trigger animation on load
+      this.router.events.subscribe((event) => {
+        if (event instanceof NavigationEnd) {
+          this.viewportScroller.scrollToPosition([0, 0]); // Scrolls to the top of the page
+        }
+      });
+      
 
       // Adding event listeners for card click to toggle popup
-      const cards = this.el.nativeElement.querySelectorAll('.card4');
-      cards.forEach((card: any) => {
-        this.renderer.listen(card, 'click', () => {
-          this.togglePopup(card);
-        });
-      });
-    }
-  }
-
-  togglePopup(card: any) {
-    const popup = card.querySelector('.popuptext');
-    if (popup.classList.contains('show')) {
-      // popup.classList.remove('show');
-    } else {
-      popup.classList.add('show');
-    }
-  }
-  closePopup(event: Event) {
-    console.log("Inside closePopup");
-    event.stopPropagation(); // Prevent the click from propagating to the card
-    const target = event.target as HTMLElement;
-    const popup = target.closest('.popuptext');
-    if (popup) {
-      popup.classList.remove('show');
-    }
+      
   }
 }
+}
+

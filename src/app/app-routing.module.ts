@@ -18,6 +18,9 @@ const routes: Routes = [
    path: 'products', component: ProductComponent 
  }, 
  {
+  path: 'products/:id', component: ProductComponent 
+},
+ {
    path:'contact' , component: ContactComponent
  },
  {

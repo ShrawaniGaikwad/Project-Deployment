@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import {} from 'googlemaps';
 import { ViewChild } from '@angular/core';
 import { MyserviceService } from '../myservice.service';
+import { Title,Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -15,60 +16,58 @@ export class ContactComponent implements OnInit {
   help!: FormGroup;
   loading: boolean = false;
   helpArray:any[]=[];
-  menuOpen = false;
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
-  }
-  constructor(private formbuilder: FormBuilder,private _http:HttpClient,private _myservice:MyserviceService,private renderer: Renderer2,
-    @Inject(PLATFORM_ID) private platformId: Object
-){}
+  siteKey: string = '';  
+  captchaResponse: string | null = null;
 
+
+  constructor(private formbuilder: FormBuilder,private _http:HttpClient,private _myservice:MyserviceService,private renderer: Renderer2,
+    @Inject(PLATFORM_ID) private platformId: Object,private titleService: Title, private metaService: Meta){}
+ onCaptchaResolved(response: string | null): void {
+    this.captchaResponse = response;  
+    this.help.patchValue({ recaptcha: response });
+  }
   ngOnInit(): void {
+    this.siteKey='6LeYlmgqAAAAAAG7pUPuacKScmfEUm5ukfXJrwKo';
+
     this.help = this.formbuilder.group({
       Name:['',[Validators.required,Validators.pattern('^[a-zA-Z]+( [a-zA-Z]+)*$')]],
       Phone:['',[Validators.required,Validators.pattern('[0-9]*'),Validators.maxLength(10),Validators.minLength(10)]],
       Email:['',[Validators.required,Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]],
       Subject:['',[Validators.required]],
-      Query:['',[Validators.required,Validators.minLength(5)]]
+      Query:['',[Validators.required,Validators.minLength(5)]],
+      recaptcha: ['', [Validators.required,]]
     });
-    if (isPlatformBrowser(this.platformId)) {
-      const script = this.renderer.createElement('script');
-      script.src = 'https://cdn.botpress.cloud/webchat/v1/inject.js';
-      script.onload = () => {
-        (window as any).botpressWebChat.init({
-          composerPlaceholder: "Chat with VPTronics Bot",
-          botConversationDescription: "Welcome to the Bot",
-          botId: '636a51aa-1eb4-4d20-8da6-6e0abafe2170',
-          hostUrl: 'https://cdn.botpress.cloud/webchat/v1',
-          messagingUrl: 'https://messaging.botpress.cloud',
-          clientId: '636a51aa-1eb4-4d20-8da6-6e0abafe2170',
-          webhookId: '84601cf8-9415-45a1-ac52-603c82a5db8a',
-          lazySocket: true,
-          themeName: "prism",
-          botName: "VPTronics Bot",
-          stylesheet: 'https://webchat-styler-css.botpress.app/prod/ce6b1978-1e2c-456f-bf32-7cb2069c226c/v36363/style.css',
-          frontendVersion: "v1",
-          useSessionStorage: true,
-          theme: "prism",
-          themeColor: "#2563eb",
-          allowedOrigins: []
-        });
-      };
-      this.renderer.appendChild(document.body, script);
-    }
+
+    this.titleService.setTitle('VPTronics - Leading UPS Solutions | VP UPS Power Backup');
+
+    // Set Meta Description
+    this.metaService.updateTag({
+      name: 'description',
+      content: 'VPTronics is a trusted provider of VP UPS systems, delivering reliable and efficient power backup solutions for homes, businesses, and industries.'
+    });
     }
 
-    myhelp(){
+    myhelp() {
       this.loading = true;
-      console.log(this.help.value);
-      this._myservice.getHelp(this.help.value).subscribe(res=>{
+  
+      if (this.help.valid) {
+        const formData = this.help.value;
+        this._myservice.getContact(formData).subscribe(
+          res => {
+            this.loading = false;
+            console.log(this.help.value);
+            alert('Submitted successfully');
+            this.help.reset();
+          },
+          err => {
+            this.loading = false;
+            alert('Unable to submit');
+          }
+        );
+      } else {
+        alert('Please complete the reCAPTCHA');
         this.loading = false;
-      alert("Submitted successfully");
-      this.help.reset();   },
-      err =>{
-        this.loading=false;
-        alert("Unable to submit")
-      })
+      }
     }
   }
   

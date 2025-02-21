@@ -1,0 +1,29 @@
+<nav class="navigation-bar">
+    <div class="container">   
+      <a href="/home">
+        <img  class="responsive-img" src="/assets/header_logo.png" >
+      </a>      
+      <nav  class="navbar navbar-custom" [ngClass]="{'expanded': menuOpen}">
+        <ul class="nav-list" [ngClass]="{'open': menuOpen}" style="color: rgb(255, 255, 255); ">
+          <!-- <li>
+          <div class="search">
+              <img (click)="toggleSearch()" style="width: 24px; height: 24px; " src="assets/search.png">
+            <div class="search-bar" [class.visible]="isSearchVisible">
+              <input type="text" placeholder="Search" [(ngModel)]="searchTerm" (input)="handleSearchChange($event)">
+              <button class="btn btn-primary"  (click)="search()">Search</button>
+
+            </div>
+          </div>
+        </li> -->
+            <li><u style="font-weight: lighter;"><h5 class="item" id="item" routerLink="/home" >Home</h5></u></li>
+            <li><u><h5 class="item" id="item" routerLink="/products">Products</h5></u></li>
+            <li><u><h5 class="item" id="item" routerLink="/contact">Contact</h5></u></li>
+            <li><u><h5 class="item" id="item" routerLink="/help">Help</h5> </u></li>
+            <li><u><h5 class="item" id="item" routerLink="/solutions">Solutions</h5></u></li>
+        </ul>
+          <a  href="javascript:void(0);" class="icon" (click)="toggleMenu()">
+          &#9776;
+        </a>
+    </nav>
+    </div> 
+  </nav> 

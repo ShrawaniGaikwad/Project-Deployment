@@ -1,6 +1,5 @@
 import { Component ,AfterViewInit,Renderer2,ElementRef,Inject, PLATFORM_ID} from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-
 import { Router } from '@angular/router';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';@Component({
   selector: 'app-home',
@@ -8,12 +7,9 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';@Component({
   styleUrl: './home.component.css'
 })
 
-export class HomeComponent {
-  menuOpen = false;
+export class HomeComponent  {
+  isChatbotVisible = false;
 
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
-  }
   constructor( private _router:Router,private renderer: Renderer2, private el: ElementRef,@Inject(PLATFORM_ID) private platformId: Object ){}
   navigation(str:any){
     console.log(str);
@@ -28,6 +24,9 @@ export class HomeComponent {
     } else {
       window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, '_blank');
     }
+  }
+  toggleChatbot() {
+    this.isChatbotVisible = !this.isChatbotVisible;
   }
 
   openLink(url: string) {
@@ -66,32 +65,32 @@ export class HomeComponent {
       window.addEventListener('scroll', handleScrollAnimation);
       handleScrollAnimation(); // Trigger animation on load
     }
-
-    if (isPlatformBrowser(this.platformId)) {
-      const script = this.renderer.createElement('script');
-      script.src = 'https://cdn.botpress.cloud/webchat/v1/inject.js';
-      script.onload = () => {
-        (window as any).botpressWebChat.init({
-          composerPlaceholder: "Chat with VPTronics Bot",
-          botConversationDescription: "Welcome to the Bot",
-          botId: '636a51aa-1eb4-4d20-8da6-6e0abafe2170',
-          hostUrl: 'https://cdn.botpress.cloud/webchat/v1',
-          messagingUrl: 'https://messaging.botpress.cloud',
-          clientId: '636a51aa-1eb4-4d20-8da6-6e0abafe2170',
-          webhookId: '84601cf8-9415-45a1-ac52-603c82a5db8a',
-          lazySocket: true,
-          themeName: "prism",
-          botName: "VPTronics Bot",
-          stylesheet: 'https://webchat-styler-css.botpress.app/prod/ce6b1978-1e2c-456f-bf32-7cb2069c226c/v36363/style.css',
-          frontendVersion: "v1",
-          useSessionStorage: true,
-          theme: "prism",
-          themeColor: "#2563eb",
-          allowedOrigins: []
-        });
-      };
-      this.renderer.appendChild(document.body, script);
-    }
+    
+    // if (isPlatformBrowser(this.platformId)) {
+    //   const script = this.renderer.createElement('script');
+    //   script.src = 'https://cdn.botpress.cloud/webchat/v1/inject.js';
+    //   script.onload = () => {
+    //     (window as any).botpressWebChat.init({
+    //       composerPlaceholder: "Chat with VPTronics Bot",
+    //       botConversationDescription: "Welcome to the Bot",
+    //       botId: '636a51aa-1eb4-4d20-8da6-6e0abafe2170',
+    //       hostUrl: 'https://cdn.botpress.cloud/webchat/v1',
+    //       messagingUrl: 'https://messaging.botpress.cloud',
+    //       clientId: '636a51aa-1eb4-4d20-8da6-6e0abafe2170',
+    //       webhookId: '84601cf8-9415-45a1-ac52-603c82a5db8a',
+    //       lazySocket: true,
+    //       themeName: "prism",
+    //       botName: "VPTronics Bot",
+    //       stylesheet: 'https://webchat-styler-css.botpress.app/prod/ce6b1978-1e2c-456f-bf32-7cb2069c226c/v36363/style.css',
+    //       frontendVersion: "v1",
+    //       useSessionStorage: true,
+    //       theme: "prism",
+    //       themeColor: "#2563eb",
+    //       allowedOrigins: []
+    //     });
+    //   };
+    //   this.renderer.appendChild(document.body, script);
+    // }
   }
 
   

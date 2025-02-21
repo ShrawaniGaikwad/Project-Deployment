@@ -17,7 +17,11 @@ import { HashLocationStrategy,LocationStrategy } from '@angular/common';
 import {} from 'googlemaps'
 import {MatIconModule} from '@angular/material/icon';
 import { LoaderComponent } from './loader/loader.component';
-
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { ChatbotComponent } from './chatbot/chatbot.component';
+import { RecaptchaModule } from 'ng-recaptcha';
+import { BidiModule } from '@angular/cdk/bidi';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,10 @@ import { LoaderComponent } from './loader/loader.component';
     ContactComponent,
     HelpComponent,
     SolutionsComponent,
-    LoaderComponent
+    LoaderComponent,
+    FooterComponent,
+    HeaderComponent,
+    ChatbotComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +44,9 @@ import { LoaderComponent } from './loader/loader.component';
     NgbCarouselModule,
     NgbModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    RecaptchaModule,
+    BidiModule
   ],
   providers: [
     provideClientHydration(),

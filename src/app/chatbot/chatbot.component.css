@@ -1,0 +1,35 @@
+.chatbot-container {
+    position: fixed;
+    right: 0;
+    bottom: 60px; /* Adjust this value as needed to position it above the button */
+    z-index: 1000;
+  }
+  
+  /* Style for the toggle button */
+  .chatbot-toggle-btn {
+    position: fixed;
+    right: 10px; /* Adjust this value to move it horizontally */
+    bottom: 10px; /* Adjust this value to move it vertically */
+    width: 60px; /* Size of the button */
+    height: 60px; /* Size of the button */
+    border-radius: 50%;
+    background-color: #101064; 
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+  
+  .chatbot-toggle-btn img {
+    width: 30px; 
+    height: 30px;
+  }
+  
+  /* Optional: Add a background image */
+  .chatbot-toggle-btn {
+    background-size: cover;
+    background-position: center;
+  }
